@@ -1,4 +1,4 @@
-Name Dogecoin
+Name Isracoin
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,8 +6,8 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION "1.6.0.0"
-!define COMPANY "Dogecoin"
-!define URL http://dogecoin.com
+!define COMPANY "Isracoin"
+!define URL http://isracoin.com
 
 # MUI Symbol Definitions
 !define MUI_ICON "pixmaps\bitcoin.ico"
@@ -19,8 +19,8 @@ SetCompressor /SOLID lzma
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER Dogecoin
-!define MUI_FINISHPAGE_RUN $INSTDIR\dogecoin-qt.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER Isracoin
+!define MUI_FINISHPAGE_RUN $INSTDIR\isracoin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
 !define MUI_UNWELCOMEFINISHPAGE_BITMAP "pixmaps\nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
@@ -45,14 +45,14 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile dogecoin-${VERSION}-win32-setup.exe
-InstallDir $PROGRAMFILES\Dogecoin
+OutFile isracoin-${VERSION}-win32-setup.exe
+InstallDir $PROGRAMFILES\Isracoin
 CRCCheck on
 XPStyle on
 BrandingText "Such currency"
 ShowInstDetails show
 VIProductVersion  "${VERSION}"
-VIAddVersionKey ProductName Dogecoin
+VIAddVersionKey ProductName Isracoin
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -66,7 +66,7 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File ..\release\dogecoin-qt.exe
+    File ..\release\isracoin-qt.exe
     File ..\release\libgcc_s_dw2-1.dll
     File ..\release\libstdc++-6.dll
     File ..\release\mingwm10.dll
@@ -84,8 +84,8 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Dogecoin.lnk" $INSTDIR\dogecoin-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Dogecoin.lnk" $INSTDIR\uninstall.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Isracoin.lnk" $INSTDIR\isracoin-qt.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall Isracoin.lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -95,10 +95,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "dogecoin" "URL Protocol" ""
-    WriteRegStr HKCR "dogecoin" "" "URL:Dogecoin"
-    WriteRegStr HKCR "dogecoin\DefaultIcon" "" $INSTDIR\dogecoin-qt.exe
-    WriteRegStr HKCR "dogecoin\shell\open\command" "" '"$INSTDIR\dogecoin-qt.exe" "%1"'
+    WriteRegStr HKCR "isracoin" "URL Protocol" ""
+    WriteRegStr HKCR "isracoin" "" "URL:Isracoin"
+    WriteRegStr HKCR "isracoin\DefaultIcon" "" $INSTDIR\isracoin-qt.exe
+    WriteRegStr HKCR "isracoin\shell\open\command" "" '"$INSTDIR\isracoin-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -116,7 +116,7 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\dogecoin-qt.exe
+    Delete /REBOOTOK $INSTDIR\isracoin-qt.exe
     Delete /REBOOTOK $INSTDIR\libgcc_s_dw2-1.dll
     Delete /REBOOTOK $INSTDIR\libstdc++-6.dll
     Delete /REBOOTOK $INSTDIR\mingwm10.dll
@@ -129,9 +129,9 @@ SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Dogecoin.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Dogecoin.lnk"
-    Delete /REBOOTOK "$SMSTARTUP\Dogecoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall Isracoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Isracoin.lnk"
+    Delete /REBOOTOK "$SMSTARTUP\Isracoin.lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -139,7 +139,7 @@ Section -un.post UNSEC0001
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "dogecoin"
+    DeleteRegKey HKCR "isracoin"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

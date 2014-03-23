@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2013-2014 Dogecoin Developers
+// Copyright (c) 2013-2014 Isracoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -347,7 +347,7 @@ bool GetMyExternalIP(CNetAddr& ipRet)
     const char* pszGet;
     const char* pszKeyword;
 
-    for (int nLookup = 0; nLookup <= 1; nLookup++)
+    for (int nLookup = 1; nLookup <= 1; nLookup++) //DRG - nLookup chaged to start from 1 so we only check via DNS names and not server IP's which tend to change or fluctuate and can't be reliable long term
     for (int nHost = 1; nHost <= 2; nHost++)
     {
         // We should be phasing out our use of sites like these. If we need
@@ -375,17 +375,17 @@ bool GetMyExternalIP(CNetAddr& ipRet)
         }
         else if (nHost == 2)
         {
-            addrConnect = CService("74.208.43.192", 80); // www.showmyip.com
+            addrConnect = CService("", 80); // not using direct IP
 
             if (nLookup == 1)
             {
-                CService addrIP("www.showmyip.com", 80, true);
+                CService addrIP("checkip.israelcoin.org", 80, true);
                 if (addrIP.IsValid())
                     addrConnect = addrIP;
             }
 
-            pszGet = "GET /simple/ HTTP/1.1\r\n"
-                     "Host: www.showmyip.com\r\n"
+            pszGet = "GET / HTTP/1.1\r\n"
+                     "Host: checkip.israelcoin.org\r\n"
                      "User-Agent: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)\r\n"
                      "Connection: close\r\n"
                      "\r\n";
@@ -1113,7 +1113,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "Dogecoin " + FormatFullVersion();
+        string strDesc = "Isracoin " + FormatFullVersion();
 
         try {
             loop {
@@ -1193,11 +1193,7 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
-    {"dogecoin.com", "seed.dogecoin.com"},
-    {"dogechain.info", "seed.dogechain.info"},
-    {"mophides.com", "seed.mophides.com"},
-    {"dglibrary.org", "seed.dglibrary.org"},
-//    {"dogecoinpool.org", "dnsseed.dogecoinpool.org"},
+    {"israelcoin.org", "dnsseed.israelcoin.org"},  //DRG
     {NULL, NULL}
 };
 
@@ -1683,7 +1679,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Dogecoin is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Isracoin is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         printf("%s\n", strError.c_str());

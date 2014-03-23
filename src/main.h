@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
-// Copyright (c) 2013-2014 Dogecoin Developers
+// Copyright (c) 2013-2014 Isracoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_MAIN_H
@@ -51,18 +51,18 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** Dust Soft Limit, allowed with additional fee per output */
-static const int64 DUST_SOFT_LIMIT = 100000000;
+static const int64 DUST_SOFT_LIMIT = 0.01 * COIN; //DRG
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
-static const int64 DUST_HARD_LIMIT = 1000000;
+static const int64 DUST_HARD_LIMIT = 0.001 * COIN;  //DRG
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 10000000000 * COIN; // DogeCoin: maximum of 100B coins (given some randomness), max transaction 10,000,000,000 for now
+static const int64 MAX_MONEY = 4800000000 * COIN; // DRG IsraCoin: maximum of 4.8B coins
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 30;
-/** Coinbase maturity after block 145000 **/
+/** Coinbase maturity after block 145 **/   //DRG
 static const int COINBASE_MATURITY_NEW = 60*4;
 /** Block at which COINBASE_MATURITY_NEW comes into effect **/
-static const int COINBASE_MATURITY_SWITCH = 145000;
+static const int COINBASE_MATURITY_SWITCH = 145;  //DRG
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** Maximum number of script-checking threads allowed */
@@ -627,7 +627,7 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
-        return dPriority > 100 * COIN * 1440 / 250; // DogeCoin: 1440 blocks found a day. Priority cutoff is 100 dogecoin day / 250 bytes.
+        return dPriority > 100 * COIN * 1440 / 250; // IsraCoin: 1440 blocks found a day. Priority cutoff is 100 isracoin day / 250 bytes.
     }
 
 // Apply the effects of this transaction on the UTXO set represented by view

@@ -1,6 +1,6 @@
 TEMPLATE = app
-TARGET = dogecoin-qt
-macx:TARGET = "Dogecoin-Qt"
+TARGET = isracoin-qt
+macx:TARGET = "Isracoin-Qt"
 VERSION = 1.6.0
 INCLUDEPATH += src src/json src/qt
 QT += core gui network
@@ -56,7 +56,7 @@ win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
 contains(USE_QRCODE, 1) {
     message(Building with QRCode support)
     DEFINES += USE_QRCODE
-    LIBS += -lqrencode
+    LIBS += -lqrencode -lpng
 }
 
 # use: qmake "USE_UPNP=1" ( enabled by default; default)
@@ -139,7 +139,7 @@ macx: {
         $$BOOST_LIB_PATH/libboost_thread-mt.a \
         $$BOOST_LIB_PATH/libboost_chrono-mt.a
     DEFINES += MAC_OSX
-    ICON = src/mac/artwork/Dogecoin.icns
+    ICON = src/mac/artwork/Isracoin.icns
     QMAKE_INFO_PLIST=src/mac/Info.plist
     # osx 10.9 has changed the stdlib default to libc++. To prevent some link error, you may need to use libstdc++
     QMAKE_CXXFLAGS += -stdlib=libstdc++
@@ -366,7 +366,7 @@ SOURCES += src/qt/test/test_main.cpp \
 HEADERS += src/qt/test/uritests.h
 DEPENDPATH += src/qt/test
 QT += testlib
-TARGET = dogecoin-qt_test
+TARGET = isracoin-qt_test
 DEFINES += BITCOIN_QT_TEST
   macx: CONFIG -= app_bundle
 }

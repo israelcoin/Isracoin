@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2014 Litecoin Developers
-// Copyright (c) 2013-2014 Dogecoin Developers
+// Copyright (c) 2013-2014 Isracoin Developers
 // Contributions by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -36,8 +36,8 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691");
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Dogecoin: starting difficulty is 1 / 2^12
+uint256 hashGenesisBlock("0x");   // DRG
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Isracoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 uint256 nBestChainWork = 0;
@@ -54,9 +54,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64 CTransaction::nMinTxFee = 100000000;
+int64 CTransaction::nMinTxFee = 0.001 * COIN;;   //DRG
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-int64 CTransaction::nMinRelayTxFee = 100000000;
+int64 CTransaction::nMinRelayTxFee = 0.001 * COIN;;  //DRG
 
 CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -69,7 +69,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Dogecoin Signed Message:\n";
+const string strMessageMagic = "Isracoin Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -360,7 +360,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 bool CTxOut::IsDust() const
 {
-    // Dogecoin: IsDust() detection disabled, allows any valid dust to be relayed.
+    // Isracoin: IsDust() detection disabled, allows any valid dust to be relayed.
     // The fees imposed on each dust txo is considered sufficient spam deterrant. 
     return false;
 }
@@ -607,20 +607,20 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
 
     if (fAllowFree)
     {
-        if (nBlockSize == 1)
+/*        if (nBlockSize == 1)
         {
             // Transactions under 10K are free
             // (about 4500bc if made of 50bc inputs)
             if (nBytes < 10000)
-                nMinFee = 0;
+                nMinFee = 0.001;
         }
         else
         {
             // Free transaction area
             if (nNewBlockSize < 27000)
-                nMinFee = 0;
-        }
-#if 0
+                nMinFee = 0.001;
+        }*/
+//#if 0
         // There is a free transaction area in blocks created by most miners,
         // * If we are relaying we allow transactions up to DEFAULT_BLOCK_PRIORITY_SIZE - 1000
         //   to be considered to fall into this category. We don't want to encourage sending
@@ -629,10 +629,10 @@ int64 CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         //   to be considered safe and assume they can likely make it into this section.
         if (nBytes < (mode == GMF_SEND ? 5000 : (DEFAULT_BLOCK_PRIORITY_SIZE - 1000)))
             nMinFee = 0;
-#endif
+//#endif
     }
 
-    // Dogecoin
+    // Isracoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1098,45 +1098,44 @@ int static generateMTRandom(unsigned int s, int range)
     return dist(gen);
 }
 
-static const int64 nDiffChangeTarget = 145000; // Patch effective @ block 145000
+static const int64 nDiffChangeTarget = 145; // effective @ block 145
 
 int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
 {
-    int64 nSubsidy = 500000 * COIN;
 
-    std::string cseed_str = prevHash.ToString().substr(7,7);
-    const char* cseed = cseed_str.c_str();
-    long seed = hex2long(cseed);
-    int rand = generateMTRandom(seed, 999999);
-    int rand1 = 0;
 
-    if(nHeight < 100000)
+    int64 nSubsidy = 50 * COIN;
+
+    if(nHeight < 6001)
     {
-        nSubsidy = (1 + rand) * COIN;
+        nSubsidy = 80000 * COIN;
     }
-    else if(nHeight < 145000)
+    else if(nHeight < 1620000)
     {
-        cseed_str = prevHash.ToString().substr(7,7);
-        cseed = cseed_str.c_str();
-        seed = hex2long(cseed);
-        rand1 = generateMTRandom(seed, 499999);
-        nSubsidy = (1 + rand1) * COIN;
+
+        nSubsidy = 50 * COIN;
+
     }
-    else if(nHeight < 600000)
+    else if(nHeight < 4773602)
     {
-        nSubsidy >>= (nHeight / 100000);
+        nSubsidy = 25 * COIN;
+
+   }
+    else if(nHeight < 11080803)
+    {
+        nSubsidy = 12.5 * COIN;
     }
     else
     {
-        nSubsidy = 10000 * COIN;
+        nSubsidy = 12.5 * COIN;
     }
 
     return nSubsidy + nFees;
 }
 
 static const int64 nTargetTimespan = 4 * 60 * 60; // old retarget (4hrs)
-static const int64 nTargetTimespanNEW = 60 ; // DogeCoin: every 1 minute
-static const int64 nTargetSpacing = 60; // DogeCoin: 1 minutes
+static const int64 nTargetTimespanNEW = 60 ; // IsraCoin: every 1 minute
+static const int64 nTargetSpacing = 60; // IsraCoin: 1 minutes
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 //
@@ -1152,7 +1151,7 @@ unsigned int ComputeMinWork(unsigned int nBase, int64 nTime)
 
     CBigNum bnResult;
     bnResult.SetCompact(nBase);
-    
+
     while (nTime > 0 && bnResult < bnProofOfWorkLimit)
     {
         if(nBestHeight+1<nDiffChangeTarget){
@@ -1177,18 +1176,18 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     unsigned int nProofOfWorkLimit = bnProofOfWorkLimit.GetCompact();
     int nHeight = pindexLast->nHeight + 1;
     bool fNewDifficultyProtocol = (nHeight >= nDiffChangeTarget);
-    
-    
-    
+
+
+
     int64 retargetTimespan = nTargetTimespan;
     int64 retargetSpacing = nTargetSpacing;
     int64 retargetInterval = nInterval;
-    
+
     if (fNewDifficultyProtocol) {
         retargetInterval = nTargetTimespanNEW / nTargetSpacing;
         retargetTimespan = nTargetTimespanNEW;
     }
-    
+
     // Genesis block
     if (pindexLast == NULL)
         return nProofOfWorkLimit;
@@ -1216,7 +1215,7 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
         return pindexLast->nBits;
     }
 
-    // Dogecoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Isracoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = retargetInterval-1;
     if ((pindexLast->nHeight+1) != retargetInterval)
@@ -1231,10 +1230,10 @@ unsigned int static GetNextWorkRequired(const CBlockIndex* pindexLast, const CBl
     // Limit adjustment step
     int64 nActualTimespan = pindexLast->GetBlockTime() - pindexFirst->GetBlockTime();
     printf("  nActualTimespan = %"PRI64d"  before bounds\n", nActualTimespan);
-    
+
     CBigNum bnNew;
     bnNew.SetCompact(pindexLast->nBits);
-    
+
     if(fNewDifficultyProtocol) //DigiShield implementation - thanks to RealSolid & WDC for this code
     {
 		// amplitude filter - thanks to daft27 for this code
@@ -2341,7 +2340,7 @@ bool CBlock::AcceptBlock(CValidationState &state, CDiskBlockPos *dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Dogecoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Isracoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
     unsigned int nFound = 0;
     for (unsigned int i = 0; i < nToCheck && nFound < nRequired && pstart != NULL; i++)
@@ -2851,29 +2850,23 @@ bool InitBlockIndex() {
 
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
-        // Genesis Block:
-        // CBlock(hash=1a91e3dace36e2be3bf030a65679fe821aa1d6ef92e7c9902eb318182c355691, input=010000000000000000000000000000000000000000000000000000000000000000000000696ad20e2dd4365c7459b4a4a5af743d5e92c6da3229e6532cd605f6533f2a5b24a6a152f0ff0f1e67860100, PoW=0000026f3f7874ca0c251314eaed2d2fcf83d7da3acfaacf59417d485310b448, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69, nTime=1386325540, nBits=1e0ffff0, nNonce=99943, vtx=1)
-        //   CTransaction(hash=5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000000000000000000000000000000000000000000000000000000000, 4294967295), coinbase 04ffff001d0104084e696e746f6e646f)
-        //    CTxOut(nValue=88.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-        //  vMerkleTree: 5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69 
-
-        // Genesis block
-        const char* pszTimestamp = "Nintondo";
+        const char* pszTimestamp = "Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 88 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+        txNew.vout[0].nValue = 1 * COIN;
+
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c6c6a01450f2b8bbb176b98f593623b04a5f5761a7d0adae4d21f77c366e01e147217a9d8864a871d95d182e01d2b003168f0fa7851278a86ac0aa682919f9a6") << OP_CHECKSIG;   //DRG
+
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1386325540;
-        block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 99943;
+        block.nTime    = 0;  // DRG
+        block.nBits    = 0x1e0ffff0;  //DRG
+        block.nNonce   = 0;  //DRG
 
         if (fTestNet)
         {
@@ -2886,7 +2879,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x5b2a3f53f605d62c53e62932dac6925e3d74afa5a4b459745c36d42d0ed26a69"));
+        assert(block.hashMerkleRoot == uint256("0x"));  //DRG
         block.print();
         assert(hash == hashGenesisBlock);
 
@@ -3159,7 +3152,7 @@ bool static AlreadyHave(const CInv& inv)
 // The message start string is designed to be unlikely to occur in normal data.
 // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
 // a large 4-byte int at any alignment.
-unsigned char pchMessageStart[4] = { 0xc0, 0xc0, 0xc0, 0xc0 };
+unsigned char pchMessageStart[4] = { 0xcf, 0xbd, 0xbe, 0x9c };  //DRG
 
 
 void static ProcessGetData(CNode* pfrom)
@@ -4201,7 +4194,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// DogecoinMiner
+// IsracoinMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4614,7 +4607,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    printf("DogecoinMiner:\n");
+    printf("IsracoinMiner:\n");
     printf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -4623,7 +4616,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("DogecoinMiner : generated block is stale");
+            return error("IsracoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4637,17 +4630,17 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("DogecoinMiner : ProcessBlock, block not accepted");
+            return error("IsracoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static DogecoinMiner(CWallet *pwallet)
+void static IsracoinMiner(CWallet *pwallet)
 {
-    printf("DogecoinMiner started\n");
+    printf("IsracoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("dogecoin-miner");
+    RenameThread("isracoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4669,7 +4662,7 @@ void static DogecoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        printf("Running DogecoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running IsracoinMiner with %"PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4769,7 +4762,7 @@ void static DogecoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        printf("DogecoinMiner terminated\n");
+        printf("IsracoinMiner terminated\n");
         throw;
     }
 }
@@ -4794,7 +4787,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&DogecoinMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&IsracoinMiner, pwallet));
 }
 
 // Amount compression:

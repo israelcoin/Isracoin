@@ -2,7 +2,7 @@
 // Alert system
 //
 
-// Copyright (c) 2013-2014 Dogecoin Developers
+// Copyright (c) 2013-2014 Isracoin Developers
 
 #include <algorithm>
 #include <boost/algorithm/string/classification.hpp>
@@ -21,7 +21,7 @@ using namespace std;
 map<uint256, CAlert> mapAlerts;
 CCriticalSection cs_mapAlerts;
 
-static const char* pszMainKey = "04d4da7a5dae4db797d9b0644d57a5cd50e05a70f36091cd62e2fc41c98ded06340be5a43a35e185690cd9cde5d72da8f6d065b499b06f51dcfba14aad859f443a";
+static const char* pszMainKey = "04af4780c94216611b0ad88acf18a88a2ed97220a228f22e3af6f02973125d576f874c81d3088988a4fd38820cc807eee415e6abf74d5b5d59c79fcf59e4965830";  //DRG
 static const char* pszTestKey = "042756726da3c7ef515d89212ee1705023d14be389e25fe15611585661b9a20021908b2b80a3c7200a0139dd2b26946606aab0eef9aa7689a6dc2c7eee237fa834";
 
 void CUnsignedAlert::SetNull()

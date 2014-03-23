@@ -8,7 +8,7 @@ IDI_ICON2 ICON DISCARDABLE "icons/bitcoin_testnet.ico"
 #define VER_PRODUCTVERSION_STR STRINGIZE(CLIENT_VERSION_MAJOR) "." STRINGIZE(CLIENT_VERSION_MINOR) "." STRINGIZE(CLIENT_VERSION_REVISION) "." STRINGIZE(CLIENT_VERSION_BUILD)
 #define VER_FILEVERSION        VER_PRODUCTVERSION
 #define VER_FILEVERSION_STR    VER_PRODUCTVERSION_STR
-#define COPYRIGHT_STR          "Dogecoin developers 2013-2014, Litecoin developers, The Bitcoin developers 2009-2013"
+#define COPYRIGHT_STR          "Isracoin developers 2013-2014, Litecoin developers, The Bitcoin developers 2009-2013"
 
 VS_VERSION_INFO VERSIONINFO
 FILEVERSION     VER_FILEVERSION
@@ -20,14 +20,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Dogecoin"
-            VALUE "FileDescription",    "Dogecoin-Qt (OSS GUI client for Dogecoin)"
+            VALUE "CompanyName",        "Isracoin"
+            VALUE "FileDescription",    "Isracoin-Qt (OSS GUI client for Isracoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "dogecoin-qt"
+            VALUE "InternalName",       "isracoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "dogecoin-qt.exe"
-            VALUE "ProductName",        "Dogecoin-Qt"
+            VALUE "OriginalFilename",   "isracoin-qt.exe"
+            VALUE "ProductName",        "Isracoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

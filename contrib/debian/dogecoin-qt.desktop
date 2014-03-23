@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=Dogecoin
-Comment=Dogecoin P2P Cryptocurrency
-Comment[fr]=Dogecoin, monnaie virtuelle cryptographique pair à pair
-Comment[tr]=Dogecoin, eşten eşe kriptografik sanal para birimi
-Exec=/usr/bin/dogecoin-qt %u
+Name=Isracoin
+Comment=Isracoin P2P Cryptocurrency
+Comment[fr]=Isracoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Isracoin, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/isracoin-qt %u
 Terminal=false
 Type=Application
-Icon=/usr/share/pixmaps/dogecoin128.png
-MimeType=x-scheme-handler/dogecoin;
+Icon=/usr/share/pixmaps/isracoin128.png
+MimeType=x-scheme-handler/isracoin;
 Categories=Office;

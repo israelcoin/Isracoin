@@ -1,49 +1,29 @@
-# Dogecoin [DOGE, Ð] Integration/Staging Tree
-http://dogecoin.com/
+# Isracoin [ISR] Integration/Staging Tree
+http://www.isracoin.org/
 
-![DogeCoin](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
+![IsraCoin](http://static.tumblr.com/bgodquo/Su9n2vc6h/cf6ac5_b7076162a3ad42df8fa31b56702c0bf5.png_srz_p_280_280_75_22_0.50_1.20_0.png)
 
-## What is DogeCoin? - Such coin
-Dogecoin is like Bitcoin, but based on Litecoin, and also much more wow.
-http://dogecoin.com/
+## What is Isracoin?
+Isracoin is the Israeli Cryptocurrency, based on Litecoin (scrypt).
+http://www.isracoin.org/
 
-## License - Much license
-DogeCoin is released under the terms of the MIT license. See [COPYING](COPYING)
+## License
+Isracoin is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see http://opensource.org/licenses/MIT.
 
-## Development and contributions - omg developers
+## Development and contributions
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
 ## Very Much Frequently Asked Questions
 
-### How much doge can exist?
-Early 2015 (approximately a year and a half after release) there will be approximately 100,000,000,000 coins.
-Each subsequent block will grant 10,000 coins to encourage miners to continue to secure the network and make up for lost wallets on hard drives/phones/lost encryption passwords/etc.
-For the block schedule, see http://en.wikipedia.org/wiki/Dogecoin#Block_schedule
+### How much Isracoin can exist?
+The maximum quantity of Isracoin is 4.8 billion, with a 10% premine for distribution to Israeli citizens and businesses.
+For details about the distribution plan please visit our website.
+1 Minute Block Targets and 1 minute DigiShield diff retargeting mechanism.
+Current reward per block: 50ISR  (to be halved in 3 years from launch).
 
-### How get doge?
-Scrypt Proof of Work
-
-1 Minute Block Targets, 4 Hour Diff Readjustments
-
-Special reward system: Random block rewards
-
-1-100,000: 0-1,000,000 Dogecoin Reward
-
-100,001 — 200,000: 0-500,000 Dogecoin Reward
-
-200,001 — 300,000: 0-250,000 Dogecoin Reward
-
-300,001 — 400,000: 0-125,000 Dogecoin Reward
-
-400,001 — 500,000: 0-62,500 Dogecoin Reward
-
-500,001 - 600,000: 0-31,250 Dogecoin Reward
-
-600,000+ — 10,000 Reward (flat)
-
-### Wow plz make dogecoind
+### To compile Isracoin:
 
     sudo apt-get install build-essential \
                          libssl-dev \
@@ -56,7 +36,7 @@ Special reward system: Random block rewards
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
 ### Such ports
-RPC 22555
-P2P 22556
+RPC 21947
+P2P 21948
 
-![](http://dogesay.com/wow//////such/coin)
+
