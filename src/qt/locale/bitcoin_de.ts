@@ -17,13 +17,13 @@
     <message>
         <location line="+59"/>
         <source>
-This is experimental software. Learn more at isracoin.com
+This is experimental software. Learn more at isracoin.org
 
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
         <translation>
-Dies ist experimentelle Software. Erfahren Sie mehr auf isracoin.com
+Dies ist experimentelle Software. Erfahren Sie mehr auf isracoin.org
 
 Veröffentlicht unter der MIT/X11-Softwarelizenz, siehe beiligende Datei COPYING oder http://www.opensource.org/licenses/mit-license.php.
 
@@ -379,22 +379,22 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Pls Send</source>
+        <source>&amp;Send ISR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Much Receive</source>
+        <source>&amp;Receive ISR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Many History</source>
+        <source>&amp;Transactions</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>&amp;Very Contacts</source>
+        <source>&amp;Contacts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

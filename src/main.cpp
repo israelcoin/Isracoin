@@ -36,7 +36,7 @@ CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x");   // DRG
+uint256 hashGenesisBlock("0x8432ed563657dc92d085fa98b5dfd77975ff50b6bc4be28efe80db615d98a9ae");   // DRG
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Isracoin: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -2864,9 +2864,9 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 0;  // DRG
+        block.nTime    = 1395078549;  // DRG
         block.nBits    = 0x1e0ffff0;  //DRG
-        block.nNonce   = 0;  //DRG
+        block.nNonce   = 86250;  //DRG
 
         if (fTestNet)
         {
@@ -2879,7 +2879,7 @@ bool InitBlockIndex() {
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0x"));  //DRG
+        assert(block.hashMerkleRoot == uint256("0xd77b7d90be4dd2cb7161010ac1ffe803b32adacf2111ac190414451ac2308e1d"));  //DRG
         block.print();
         assert(hash == hashGenesisBlock);
 
