@@ -15,7 +15,7 @@ for more information or see http://opensource.org/licenses/MIT.
 Developers work in their own trees, then submit pull requests when they think
 their feature or bug fix is ready.
 
-## Very Much Frequently Asked Questions
+## Frequently Asked Questions
 
 ### How much Isracoin can exist?
 The maximum quantity of Isracoin is 4.8 billion, with a 10% premine for distribution to Israeli citizens and businesses.
@@ -35,7 +35,7 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
     cd src/
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
-### Such ports
+### Ports
 RPC 21947
 P2P 21948
 
