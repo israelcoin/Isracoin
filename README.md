@@ -19,6 +19,8 @@ https://bitcointalk.org/index.php?topic=529409.0
 
 ### Hebrew resources
 
+Hebrew Forums: www.isracoin.org.il/#!forum/mainPage
+
 [Facebook group](https://www.facebook.com/groups/IsraelCoin/221631171369855/)
 
 ## Developers
