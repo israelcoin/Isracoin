@@ -7,6 +7,26 @@ http://www.isracoin.org/
 Isracoin is the Israeli Cryptocurrency, based on Litecoin (scrypt).
 http://www.isracoin.org/
 
+## Community
+
+Forums: http://www.isracoin.org/#!forum/mainPage
+
+Irc: [#isracoin on freenode](http://webchat.freenode.net/?channels=%23isracoin)
+
+http://www.reddit.com/r/isracoin
+
+https://bitcointalk.org/index.php?topic=529409.0
+
+### Hebrew resources
+
+[Facebook group](https://www.facebook.com/groups/IsraelCoin/221631171369855/)
+
+## Developers
+
+Developers are encouraged to create tools for Isracoin to support the adoption of Isracoin in Israel, and around the world. Such software, e.g. for payments, will help Israeli start using the currency in their daily lives.
+
+Interested in helping out? Please email contact@isracoin.org or open an isue in the [Github Tracker](https://github.com/israelcoin/Isracoin/issues).
+
 ## License
 Isracoin is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see http://opensource.org/licenses/MIT.
