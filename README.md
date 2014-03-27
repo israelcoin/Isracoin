@@ -25,6 +25,8 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
 
 ### To compile Isracoin:
 
+#### Linux (Debian / Ubuntu):
+
     sudo apt-get install build-essential \
                          libssl-dev \
                          libdb5.1++-dev \
@@ -34,6 +36,14 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
 
     cd src/
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
+
+for more information [See Linux build instructions](doc/build-unix.md)
+
+#### Windows
+[See windows build instructions](doc/build-msw.mdd)
+
+#### Mac OS X
+[See OS X build instructions](doc/build-osx.md)
 
 ### Ports
 RPC 21947
