@@ -68,12 +68,13 @@ for more information [See Linux build instructions](doc/build-unix.md)
 [See OS X build instructions](doc/build-osx.md)
 
 ### Ports
-RPC: 21947
-P2P: 21948
-Total coins: 4.8 billion
-50 coins per block
-Block every 1 minute
-1 minute DigiShield diff retargeting mechanism
-Coins mature after 260 blocks
+
+    RPC: 21947
+    P2P: 21948
+    Total coins: 4.8 billion
+    50 coins per block
+    Block every 1 minute
+    1 minute DigiShield diff retargeting mechanism
+    Coins mature after 260 blocks
 
 
