@@ -67,7 +67,7 @@ for more information [See Linux build instructions](doc/build-unix.md)
 #### Mac OS X
 [See OS X build instructions](doc/build-osx.md)
 
-### Ports
+### More Information
 
     RPC: 21947
     P2P: 21948
