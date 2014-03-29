@@ -5,12 +5,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About Isracoin</source>
-        <translation>אודות לייטקוין</translation>
+        <translation>אודות ישראקוין</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;Isracoin&lt;/b&gt; version</source>
-        <translation>גרסת &lt;b&gt;לייטקוין&lt;/b&gt;</translation>
+        <translation>גרסת &lt;b&gt;ישראקוין&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -78,7 +78,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your Isracoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>אלה כתובת הלייטקוין שלך עבור קבלת תשלומים. ייתכן ותרצה לתת כתובת שונה לכל שולח כדי שתוכל לעקוב אחר מי משלם לך.</translation>
+        <translation>אלה כתובות הישראקוין שלך עבור קבלת תשלומים. ייתכן ותרצה לתת כתובת שונה לכל שולח כדי שתוכל לעקוב אחר מי משלם לך.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -93,7 +93,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own a Isracoin address</source>
-        <translation>חתום על הודעה בכדי להוכיח כי אתה הבעלים של כתובת לייטקוין.</translation>
+        <translation>חתום על הודעה בכדי להוכיח כי אתה הבעלים של כתובת ישראקוין.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -118,7 +118,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified Isracoin address</source>
-        <translation>אמת הודעה בכדי להבטיח שהיא נחתמה עם כתובת לייטקוין מסוימת.</translation>
+        <translation>אמת הודעה בכדי להבטיח שהיא נחתמה עם כתובת ישראקוין מסוימת.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -133,7 +133,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your Isracoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>אלה כתובת הלייטקוין שלך עבור שליחת תשלומים. תמיד בדוק את מספר ואת כתובות מקבלי התשלומים לפני שליחת מטבעות.</translation>
+        <translation>אלה כתובות הישראקוין שלך עבור שליחת תשלומים. תמיד בדוק את מספר ואת כתובות מקבלי התשלומים לפני שליחת מטבעות.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -259,7 +259,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ISRCOINS&lt;/b&gt;!</source>
-        <translation>אזהרה: אם אתה מצפין את הארנק ומאבד את הסיסמא, אתה &lt;b&gt;תאבד את כל הלייטקוינים שלך&lt;/b&gt;!</translation>
+        <translation>אזהרה: אם אתה מצפין את הארנק ומאבד את הסיסמא, אתה &lt;b&gt;תאבד את כל הישראקוינים שלך&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -286,7 +286,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-56"/>
         <source>Isracoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your isracoins from being stolen by malware infecting your computer.</source>
-        <translation>לייטקוין ייסגר עכשיו כדי להשלים את תהליך ההצפנה. זכור שהצפנת הארנק שלך אינו יכול להגן באופן מלא על הלייטקוינים שלך מתוכנות זדוניות המושתלות על המחשב.</translation>
+        <translation>ישראקוין ייסגר עכשיו כדי להשלים את תהליך ההצפנה. זכור שהצפנת הארנק שלך אינו יכול להגן באופן מלא על הישראקוינים שלך מתוכנות זדוניות המושתלות על המחשב.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -385,7 +385,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about Isracoin</source>
-        <translation>הצג מידע על לייטקוין</translation>
+        <translation>הצג מידע על ישראקוין</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -430,12 +430,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-347"/>
         <source>Send coins to a Isracoin address</source>
-        <translation>שלח מטבעות לכתובת לייטקוין</translation>
+        <translation>שלח מטבעות לכתובת ישראקוין</translation>
     </message>
     <message>
         <location line="+49"/>
         <source>Modify configuration options for Isracoin</source>
-        <translation>שנה אפשרויות תצורה עבור לייטקוין</translation>
+        <translation>שנה אפשרויות תצורה עבור ישראקוין</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -466,7 +466,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-165"/>
         <location line="+530"/>
         <source>Isracoin</source>
-        <translation>לייטקוין</translation>
+        <translation>ישראקוין</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -491,7 +491,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+22"/>
         <source>&amp;About Isracoin</source>
-        <translation>אודות לייטקוין</translation>
+        <translation>אודות ישראקוין</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -511,12 +511,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+7"/>
         <source>Sign messages with your Isracoin addresses to prove you own them</source>
-        <translation>חתום על הודעות עם כתובות הלייטקוין שלך כדי להוכיח שהן בבעלותך</translation>
+        <translation>חתום על הודעות עם כתובות הישראקוין שלך כדי להוכיח שהן בבעלותך</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified Isracoin addresses</source>
-        <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת לייטקוין מסוימות</translation>
+        <translation>אמת הודעות כדי להבטיח שהן נחתמו עם כתובת ישראקוין מסוימות</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -547,12 +547,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+47"/>
         <source>Isracoin client</source>
-        <translation>תוכנת לייטקוין</translation>
+        <translation>תוכנת ישראקוין</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to Isracoin network</source>
-        <translation><numerusform>חיבור פעיל אחד לרשת הלייטקוין</numerusform><numerusform>%n חיבורים פעילים לרשת הלייטקוין</numerusform></translation>
+        <translation><numerusform>חיבור פעיל אחד לרשת הישראקוין</numerusform><numerusform>%n חיבורים פעילים לרשת הישראקוין</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -666,7 +666,7 @@ Address: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid Isracoin address or malformed URI parameters.</source>
-        <translation>לא ניתן לנתח URI! זה יכול להיגרם כתוצאה מכתובת לייטקוין לא תקינה או פרמטרי URI חסרי צורה תקינה.</translation>
+        <translation>לא ניתן לנתח URI! זה יכול להיגרם כתוצאה מכתובת ישראקוין לא תקינה או פרמטרי URI חסרי צורה תקינה.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -681,7 +681,7 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
         <source>A fatal error occurred. Isracoin can no longer continue safely and will quit.</source>
-        <translation>שגיאה סופנית אירעה. לייטקוין אינו יכול להמשיך לפעול בבטחה ולכן ייסגר.</translation>
+        <translation>שגיאה סופנית אירעה. ישראקוין אינו יכול להמשיך לפעול בבטחה ולכן ייסגר.</translation>
     </message>
 </context>
 <context>
@@ -747,7 +747,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid Isracoin address.</source>
-        <translation>הכתובת שהוכנסה &quot;%1&quot; אינה כתובת לייטקוין תקינה.</translation>
+        <translation>הכתובת שהוכנסה &quot;%1&quot; אינה כתובת ישראקוין תקינה.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -829,12 +829,12 @@ Address: %4
     <message>
         <location line="+31"/>
         <source>Automatically start Isracoin after logging in to the system.</source>
-        <translation>הפעל את לייטקוין באופן עצמאי לאחר התחברות למערכת.</translation>
+        <translation>הפעל את ישראקוין באופן עצמאי לאחר התחברות למערכת.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start Isracoin on system login</source>
-        <translation>התחל את לייטקוין בעת התחברות למערכת</translation>
+        <translation>התחל את ישראקוין בעת התחברות למערכת</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -854,7 +854,7 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Automatically open the Isracoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>פתח את פורט לייטקוין בנתב באופן אוטומטי. עובד רק אם UPnP מאופשר ונתמך ע&quot;י הנתב.</translation>
+        <translation>פתח את פורט ישראקוין בנתב באופן אוטומטי. עובד רק אם UPnP מאופשר ונתמך ע&quot;י הנתב.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -864,7 +864,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the Isracoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>התחבר לרשת הלייטקוין דרך פרוקסי SOCKS (למשל בעת התחברות דרך Tor).</translation>
+        <translation>התחבר לרשת הישראקוין דרך פרוקסי SOCKS (למשל בעת התחברות דרך Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -939,7 +939,7 @@ Address: %4
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting Isracoin.</source>
-        <translation>ניתן לקבוע כאן את שפת ממשק המשתמש. הגדרה זו תחול לאחר הפעלה מחדש של לייטקוין.</translation>
+        <translation>ניתן לקבוע כאן את שפת ממשק המשתמש. הגדרה זו תחול לאחר הפעלה מחדש של ישראקוין.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -954,7 +954,7 @@ Address: %4
     <message>
         <location line="+9"/>
         <source>Whether to show Isracoin addresses in the transaction list or not.</source>
-        <translation>האם להציג כתובות לייטקוין ברשימת הפעולות או לא.</translation>
+        <translation>האם להציג כתובות ישראקוין ברשימת הפעולות או לא.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1006,7 +1006,7 @@ Address: %4
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting Isracoin.</source>
-        <translation>הגדרה זו תחול לאחר הפעלה מחדש של לייטקוין.</translation>
+        <translation>הגדרה זו תחול לאחר הפעלה מחדש של ישראקוין.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1025,7 +1025,7 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Isracoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת הלייטקוין לאחר כינון חיבור, אך התהליך טרם הסתיים.</translation>
+        <translation>המידע המוצג עשוי להיות מיושן. הארנק שלך מסתנכרן באופן אוטומטי עם רשת הישראקוין לאחר כינון חיבור, אך התהליך טרם הסתיים.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1079,7 +1079,7 @@ Address: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start isracoin: click-to-pay handler</source>
-        <translation>לא ניתן להתחיל את לייטקוין: מפעיל לחץ-לתשלום </translation>
+        <translation>לא ניתן להתחיל את ישראקוין: מפעיל לחץ-לתשלום </translation>
     </message>
 </context>
 <context>
@@ -1229,7 +1229,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Show the Isracoin-Qt help message to get a list with possible Isracoin command-line options.</source>
-        <translation>הצג את הודעה העזרה של isracoin-qt כדי לקבל רשימה של אפשרויות שורת פקודה של לייטקוין.</translation>
+        <translation>הצג את הודעה העזרה של isracoin-qt כדי לקבל רשימה של אפשרויות שורת פקודה של ישראקוין.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,12 +1249,12 @@ Address: %4
     <message>
         <location line="-104"/>
         <source>Isracoin - Debug window</source>
-        <translation>לייטקוין - חלון ניפוי</translation>
+        <translation>ישראקוין - חלון ניפוי</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>Isracoin Core</source>
-        <translation>ליבת לייטקוין</translation>
+        <translation>ליבת ישראקוין</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1274,7 +1274,7 @@ Address: %4
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
         <source>Welcome to the Isracoin RPC console.</source>
-        <translation>ברוכים הבאים ללוח בקרת RPC של לייטקוין</translation>
+        <translation>ברוכים הבאים ללוח בקרת RPC של ישראקוין</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1458,7 +1458,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>הכנס כתובת לייטקוין (למשל DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <translation>הכנס כתובת ישראקוין (למשל DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
 <context>
@@ -1523,7 +1523,7 @@ Address: %4
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this Isracoin address</source>
-        <translation>חתום על ההודעה כדי להוכיח שכתובת הלייטקוין הזו בבעלותך.</translation>
+        <translation>חתום על ההודעה כדי להוכיח שכתובת הישראקוין הזו בבעלותך.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1559,7 +1559,7 @@ Address: %4
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified Isracoin address</source>
-        <translation>אמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת הלייטקוין הנתונה</translation>
+        <translation>אמת את ההודעה כדי להבטיח שהיא נחתמה עם כתובת הישראקוין הנתונה</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1575,7 +1575,7 @@ Address: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>הכנס כתובת לייטקוין (למשל DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <translation>הכנס כתובת ישראקוין (למשל DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1585,7 +1585,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Enter Isracoin signature</source>
-        <translation>הכנס חתימת לייטקוין</translation>
+        <translation>הכנס חתימת ישראקוין</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2197,7 +2197,7 @@ Address: %4
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
         <source>Isracoin version</source>
-        <translation>גרסת לייטקוין</translation>
+        <translation>גרסת ישראקוין</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2342,7 +2342,7 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. Isracoin is probably already running.</source>
-        <translation>לא מסוגל להשיג נעילה על תיקיית הנתונים %s. כנראה שלייטקוין כבר רץ.</translation>
+        <translation>לא מסוגל להשיג נעילה על תיקיית הנתונים %s. כנראה שישראקוין כבר רץ.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2387,7 +2387,7 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Isracoin will not work properly.</source>
-        <translation>אזהרה: אנא בדוק שהתאריך והשעה של המחשב שלך נכונים! אם השעון שלך אינו נכון לייטקוין לא יעבוד כראוי.</translation>
+        <translation>אזהרה: אנא בדוק שהתאריך והשעה של המחשב שלך נכונים! אם השעון שלך אינו נכון ישראקוין לא יעבוד כראוי.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2637,7 +2637,7 @@ rpcpassword=%s
     <message>
         <location line="+5"/>
         <source>SSL options: (see the Isracoin Wiki for SSL setup instructions)</source>
-        <translation>אפשרויות SSL: (ראה את הויקי של לייטקוין עבור הוראות הגדרת SSL)</translation>
+        <translation>אפשרויות SSL: (ראה את הויקי של ישראקוין עבור הוראות הגדרת SSL)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2827,12 +2827,12 @@ rpcpassword=%s
     <message>
         <location line="+1"/>
         <source>Error loading wallet.dat: Wallet requires newer version of Isracoin</source>
-        <translation>שגיאה בטעינת הקובץ wallet.dat: הארנק דורש גרסה חדשה יותר של לייטקוין</translation>
+        <translation>שגיאה בטעינת הקובץ wallet.dat: הארנק דורש גרסה חדשה יותר של ישראקוין</translation>
     </message>
     <message>
         <location line="+93"/>
         <source>Wallet needed to be rewritten: restart Isracoin to complete</source>
-        <translation>יש לכתוב מחדש את הארנק: אתחל את לייטקוין לסיום</translation>
+        <translation>יש לכתוב מחדש את הארנק: אתחל את ישראקוין לסיום</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2892,7 +2892,7 @@ rpcpassword=%s
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. Isracoin is probably already running.</source>
-        <translation>לא ניתן לקשור ל-%s במחשב זה. לייטקוין כנראה עדיין רץ.</translation>
+        <translation>לא ניתן לקשור ל-%s במחשב זה. ישראקוין כנראה עדיין רץ.</translation>
     </message>
     <message>
         <location line="+64"/>
