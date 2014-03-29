@@ -7,6 +7,28 @@ http://www.isracoin.org/
 Isracoin is the Israeli Cryptocurrency, based on Litecoin (scrypt).
 http://www.isracoin.org/
 
+## Community
+
+Forums: http://www.isracoin.org/#!forum/mainPage
+
+Irc: [#isracoin on freenode](http://webchat.freenode.net/?channels=%23isracoin)
+
+http://www.reddit.com/r/isracoin
+
+https://bitcointalk.org/index.php?topic=529409.0
+
+### Hebrew resources
+
+Hebrew Forums: www.isracoin.org.il/#!forum/mainPage
+
+[Facebook group](https://www.facebook.com/groups/IsraelCoin/221631171369855/)
+
+## Developers
+
+Developers are encouraged to create tools for Isracoin to support the adoption of Isracoin in Israel, and around the world. Such software, e.g. for payments, will help Israeli start using the currency in their daily lives.
+
+Interested in helping out? Please email contact@isracoin.org or open an isue in the [Github Tracker](https://github.com/israelcoin/Isracoin/issues).
+
 ## License
 Isracoin is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see http://opensource.org/licenses/MIT.
@@ -25,6 +47,8 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
 
 ### To compile Isracoin:
 
+#### Linux (Debian / Ubuntu):
+
     sudo apt-get install build-essential \
                          libssl-dev \
                          libdb5.1++-dev \
@@ -34,6 +58,14 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
 
     cd src/
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
+
+for more information [See Linux build instructions](doc/build-unix.md)
+
+#### Windows
+[See windows build instructions](doc/build-msw.mdd)
+
+#### Mac OS X
+[See OS X build instructions](doc/build-osx.md)
 
 ### Ports
 RPC: 21947
