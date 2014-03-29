@@ -36,7 +36,12 @@ Current reward per block: 50ISR  (to be halved in 3 years from launch).
     make -f makefile.unix USE_UPNP=1 USE_IPV6=1 USE_QRCODE=1
 
 ### Ports
-RPC 21947
-P2P 21948
+RPC: 21947
+P2P: 21948
+Total coins: 4.8 billion
+50 coins per block
+Block every 1 minute
+1 minute DigiShield diff retargeting mechanism
+Coins mature after 260 blocks
 
 
