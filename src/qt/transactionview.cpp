@@ -128,7 +128,7 @@ TransactionView::TransactionView(QWidget *parent) :
     QAction *copyTxIDAction = new QAction(tr("Copy transaction ID"), this);
     QAction *editLabelAction = new QAction(tr("Edit label"), this);
     QAction *showDetailsAction = new QAction(tr("Show transaction details"), this);
-    QAction *viewOnIsrachain = new QAction(tr("Show transaction on Israchain"), this);
+    QAction *viewOnIsrachain = new QAction(tr("Show transaction on ISR Block Explorer"), this);
 
     contextMenu = new QMenu();
     contextMenu->addAction(copyAddressAction);
@@ -391,7 +391,7 @@ void TransactionView::viewOnIsrachain()
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://israchain.info/tx/");
+        QString format("http://blockexplorer.israelcoin.org/tx/");
         format += selection.at(0).data(TransactionTableModel::TxIDRole).toString();
 
         QDesktopServices::openUrl(QUrl(format));

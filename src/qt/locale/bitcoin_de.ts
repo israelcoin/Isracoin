@@ -2620,8 +2620,8 @@ Das bedeutet, dass eine Gebühr von mindestens %2 erforderlich ist.
     </message>
     <message>
         <location line="+19"/>
-        <source>Show transaction on Israchain</source>
-        <translation>Transaktion auf Israchain anzeigen</translation>
+        <source>Show transaction on ISR Block Explorer</source>
+        <translation>Transaktion auf ISR Block Explorer anzeigen</translation>
     </message>
     <message>
         <location line="+105"/>
