@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 1.6.0
+!define VERSION 1.6.1
 !define COMPANY "Isracoin project"
 !define URL http://www.isracoin.com/
 
