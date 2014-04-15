@@ -1,7 +1,6 @@
 src/*.exe
-src/dogecoin
-src/dogecoind
-src/test_dogecoin
+src/isracoind
+src/test_isracoin
 .*.swp
 *.*~*
 *.bak
