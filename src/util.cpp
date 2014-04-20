@@ -968,7 +968,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.dogecoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Dogecoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Israecoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");

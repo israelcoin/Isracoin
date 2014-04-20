@@ -55,9 +55,9 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-int64_t CTransaction::nMinTxFee = 100000000;  // Override with -mintxfee
+int64_t CTransaction::nMinTxFee = 0.001 * COIN;  //DRG
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying and mining) */
-int64_t CTransaction::nMinRelayTxFee = 100000000;
+int64_t CTransaction::nMinRelayTxFee = 0.001 * COIN;
 
 static CMedianFilter<int> cPeerBlockCounts(8, 0); // Amount of blocks that other nodes claim to have
 
@@ -709,7 +709,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
 
     if (fAllowFree)
     {
-        if (nBlockSize == 1)
+        /*if (nBlockSize == 1)
         {
             // Transactions under 10K are free
             // (about 4500bc if made of 50bc inputs)
@@ -721,7 +721,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
             // Free transaction area
             if (nNewBlockSize < 27000)
                 nMinFee = 0;
-        }
+        }*/
 #if 0
         // There is a free transaction area in blocks created by most miners,
         // * If we are relaying we allow transactions up to DEFAULT_BLOCK_PRIORITY_SIZE - 1000
@@ -1159,9 +1159,9 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 }
 
 // New Difficulty adjustement and reward scheme by /u/lleti, rog1121, and DigiByte (DigiShield Developers).
-static const int64_t nTargetTimespan = 4 * 60 * 60; // Dogecoin: every 4 hours
-static const int64_t nTargetTimespanNEW = 60 ; // Dogecoin: every 1 minute
-static const int64_t nTargetSpacing = 60; // Dogecoin: 1 minute
+static const int64_t nTargetTimespan = 4 * 60 * 60; // IsraCoin: every 4 hours
+static const int64_t nTargetTimespanNEW = 60 ; // IsraCoin: every 1 minute
+static const int64_t nTargetSpacing = 60; // IsraCoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 static const int64_t nDiffChangeTarget = 145000; // Patch effective @ block 145000
