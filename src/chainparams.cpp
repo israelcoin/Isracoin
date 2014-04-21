@@ -110,8 +110,8 @@ public:
         pchMessageStart[2] = 0xbe;
         pchMessageStart[3] = 0x9c;
         vAlertPubKey = ParseHex("04af4780c94216611b0ad88acf18a88a2ed97220a228f22e3af6f02973125d576f874c81d3088988a4fd38820cc807eee415e6abf74d5b5d59c79fcf59e4965830");
-        nDefaultPort = 22556;
-        nRPCPort = 22555;
+        nDefaultPort = 21948;
+        nRPCPort = 21948;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         nSubsidyHalvingInterval = 210000;
 
@@ -191,38 +191,41 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
+        pchMessageStart[0] = 0x00;
+        pchMessageStart[1] = 0x00;
+        pchMessageStart[2] = 0x00;
+        pchMessageStart[3] = 0x00;
         vAlertPubKey = ParseHex("0x");
-        nDefaultPort = 44556;
-        nRPCPort = 44555;
-        strDataDir = "testnet3";
+        nDefaultPort = 41930;
+        nRPCPort = 21948;
+        strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1391503289;
         genesis.nNonce = 997879;
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0xbb0a78264637406b6360aad926284d544d7049f45189db5664f3c4d07350559e"));
+        assert(hashGenesisBlock == uint256("0x"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("testdoge.lionservers.de", "testdoge-seed.lionservers.de"));
-        vSeeds.push_back(CDNSSeedData("lionservers.de", "testdoge-seed-static.lionservers.de"));
+        vSeeds.push_back(CDNSSeedData(""));
+        vSeeds.push_back(CDNSSeedData(""));
 
-        // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
-        
-        std::vector<unsigned char> pka = list_of(113);
-        base58Prefixes[PUBKEY_ADDRESS] = pka;
-        std::vector<unsigned char> sca = list_of(196);
-        base58Prefixes[SCRIPT_ADDRESS] = sca;
-        std::vector<unsigned char> sk  = list_of(241);
-        base58Prefixes[SECRET_KEY]     = sk;
-        std::vector<unsigned char> epk = list_of(0x04)(0x35)(0xD1)(0xDF);
-        base58Prefixes[EXT_PUBLIC_KEY] = epk;
-        std::vector<unsigned char> esk = list_of(0x04)(0x35)(0x75)(0xA4);
-        base58Prefixes[EXT_SECRET_KEY] = esk;
+        // Workaround for Boost not being quite compatible with C++11;
+		std::vector<unsigned char> pka = list_of(102);
+		base58Prefixes[PUBKEY_ADDRESS] = pka;
+
+		std::vector<unsigned char> sca = list_of(22);
+		base58Prefixes[SCRIPT_ADDRESS] = sca;
+
+		std::vector<unsigned char> sk  = list_of(158);
+		base58Prefixes[SECRET_KEY]     = sk;
+
+		std::vector<unsigned char> epk = list_of(0x04)(0x88)(0xC4)(0x2E);
+		base58Prefixes[EXT_PUBLIC_KEY] = epk;
+
+		std::vector<unsigned char> esk = list_of(0x04)(0x88)(0xE1)(0xF4);
+		base58Prefixes[EXT_SECRET_KEY] = esk;
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
 };
