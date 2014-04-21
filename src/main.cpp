@@ -1126,33 +1126,27 @@ int static generateMTRandom(unsigned int s, int range)
 
 int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = 500000 * COIN;
+    int64_t nSubsidy = 50 * COIN;
 
-    std::string cseed_str = prevHash.ToString().substr(7,7);
-    const char* cseed = cseed_str.c_str();
-    long seed = hex2long(cseed);
-    int rand = generateMTRandom(seed, 999999);
-    int rand1 = 0;
-
-    if(nHeight < 100000)
+    if(nHeight < 6001)
     {
-        nSubsidy = (1 + rand) * COIN;
+        nSubsidy = 80000 * COIN;
     }
-    else if(nHeight < 145000)
+    else if(nHeight < 1620000)
     {
-        cseed_str = prevHash.ToString().substr(7,7);
-        cseed = cseed_str.c_str();
-        seed = hex2long(cseed);
-        rand1 = generateMTRandom(seed, 499999);
-        nSubsidy = (1 + rand1) * COIN;
+    	nSubsidy = 50 * COIN;
     }
-    else if(nHeight < 600000)
+    else if(nHeight < 4773602)
     {
-        nSubsidy >>= (nHeight / 100000);
+    	nSubsidy = 25 * COIN;
+    }
+    else if(nHeight < 11080803)
+    {
+    	nSubsidy = 12.5 * COIN;
     }
     else
     {
-        nSubsidy = 10000 * COIN;
+    	nSubsidy = 12.5 * COIN;
     }
 
     return nSubsidy + nFees;
