@@ -134,8 +134,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData(""));
-        vSeeds.push_back(CDNSSeedData(""));
+        //TODO
+        vSeeds.push_back(CDNSSeedData("TODO", "TO.DO"));
 
         // Workaround for Boost not being quite compatible with C++11;
 		std::vector<unsigned char> pka = list_of(102);
