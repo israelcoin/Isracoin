@@ -1198,7 +1198,8 @@ static const char *strMainNetDNSSeed[][2] = {
 };
 
 static const char *strTestNetDNSSeed[][2] = {
-    {NULL, NULL}
+		{"israelcoin.org", "testnetdns.israelcoin.org"},
+		{NULL, NULL}
 };
 
 void ThreadDNSAddressSeed()

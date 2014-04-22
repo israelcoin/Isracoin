@@ -1102,10 +1102,8 @@ static const int64 nDiffChangeTarget = 145; // effective @ block 145
 
 int64 static GetBlockValue(int nHeight, int64 nFees, uint256 prevHash)
 {
-
-
     int64 nSubsidy = 50 * COIN;
-
+    if (!fTestNet)
     if(nHeight < 6001)
     {
         nSubsidy = 80000 * COIN;
@@ -2821,11 +2819,12 @@ bool LoadBlockIndex()
 {
     if (fTestNet)
     {
-        pchMessageStart[0] = 0xfc;
-        pchMessageStart[1] = 0xc1;
-        pchMessageStart[2] = 0xb7;
-        pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0xbb0a78264637406b6360aad926284d544d7049f45189db5664f3c4d07350559e");
+    	/* For testnet, just took pchMessageStart[0] of main net to all */
+		pchMessageStart[0] = 0xfc;
+		pchMessageStart[1] = 0xfc;
+		pchMessageStart[2] = 0xfc;
+		pchMessageStart[3] = 0xfc;
+		hashGenesisBlock = uint256("0x164286ca09b1282a678f54b1330b16600bc5466a3ec170f8e2ff7bddfb4fcac3");
     }
 
     //
@@ -2850,7 +2849,7 @@ bool InitBlockIndex() {
 
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
-        const char* pszTimestamp = "Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
+        const char* pszTimestamp = fTestNet? "Apr-15-2014 Harvard Scientists: 2013 Comet Awards Announced":"Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2869,17 +2868,18 @@ bool InitBlockIndex() {
         block.nNonce   = 86250;  //DRG
 
         if (fTestNet)
-        {
-            block.nTime    = 1391503289;
-            block.nNonce   = 997879;
-        }
+		{
+			block.nTime    = 1398173675;
+			block.nNonce   = 1454211;
+		}
 
         //// debug print
         uint256 hash = block.GetHash();
         printf("%s\n", hash.ToString().c_str());
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xd77b7d90be4dd2cb7161010ac1ffe803b32adacf2111ac190414451ac2308e1d"));  //DRG
+        if(!fTestNet)
+        	assert(block.hashMerkleRoot == uint256("0xd77b7d90be4dd2cb7161010ac1ffe803b32adacf2111ac190414451ac2308e1d"));  //DRG
         block.print();
         assert(hash == hashGenesisBlock);
 
