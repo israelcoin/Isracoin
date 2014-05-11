@@ -1169,7 +1169,7 @@ static const int64_t nTargetTimespanNEW = 60 ; // IsraCoin: every 1 minute
 static const int64_t nTargetSpacing = 60; // IsraCoin: 1 minute
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
-static const int64_t nDiffChangeTarget = 145000; // Patch effective @ block 145000
+static const int64_t nDiffChangeTarget = 145; // Patch effective @ block 145000
 
 //
 // minimum amount of work that could possibly be required nTime after
