@@ -57,9 +57,12 @@ public:
         genesis.nNonce   = 0;
 
         hashGenesisBlock = genesis.GetHash();
+
         //TODO - add genesis block
-        assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+		//assert(hashGenesisBlock == uint256("0x"));
+		//assert(genesis.hashMerkleRoot == uint256("0x"));
+
+
 
         vSeeds.push_back(CDNSSeedData("israelcoin.org", "dnsseed.israelcoin.org"));
 
@@ -117,25 +120,41 @@ public:
         // The message start string is designed to be unlikely to occur in normal data.
         // The characters are rarely used upper ASCII, not valid as UTF-8, and produce
         // a large 4-byte int at any alignment.
-        pchMessageStart[0] = 0x00;
-        pchMessageStart[1] = 0x00;
-        pchMessageStart[2] = 0x00;
-        pchMessageStart[3] = 0x00;
-        vAlertPubKey = ParseHex("0x");
+        pchMessageStart[0] = 0xfc;
+        pchMessageStart[1] = 0xfc;
+        pchMessageStart[2] = 0xfc;
+        pchMessageStart[3] = 0xfc;
+        vAlertPubKey = ParseHex("04af4780c94216611b0ad88acf18a88a2ed97220a228f22e3af6f02973125d576f874c81d3088988a4fd38820cc807eee415e6abf74d5b5d59c79fcf59e4965830");
         nDefaultPort = 41930;
         nRPCPort = 21948;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1391503289;
-        genesis.nNonce = 997879;
-        hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x"));
+        const char* pszTimestamp = "Apr-15-2014 Harvard Scientists: 2013 Comet Awards Announced";
+        CTransaction txNew;
+		txNew.vin.resize(1);
+		txNew.vout.resize(1);
+		txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+		txNew.vout[0].nValue = 1 * COIN;
+		txNew.vout[0].scriptPubKey = CScript() << ParseHex("04c6c6a01450f2b8bbb176b98f593623b04a5f5761a7d0adae4d21f77c366e01e147217a9d8864a871d95d182e01d2b003168f0fa7851278a86ac0aa682919f9a6") << OP_CHECKSIG;   //DRG
+
+		CBlock block;
+		block.vtx.push_back(txNew);
+		block.hashPrevBlock = 0;
+		block.hashMerkleRoot = block.BuildMerkleTree();
+		block.nVersion = 1;
+		block.nTime    = 1398173675;  // DRG
+		block.nBits    = 0x1e0ffff0;  //DRG
+		block.nNonce   = 1454211;  //DRG
+
+		hashGenesisBlock = block.GetHash();
+        assert(hashGenesisBlock == uint256("0x164286ca09b1282a678f54b1330b16600bc5466a3ec170f8e2ff7bddfb4fcac3"));
+        genesis = CBlock(block);
 
         vFixedSeeds.clear();
         vSeeds.clear();
         //TODO
-        vSeeds.push_back(CDNSSeedData("TODO", "TO.DO"));
+        vSeeds.push_back(CDNSSeedData("israelcoin_testnet.org", "testnet.israelcoin.org"));
 
         // Workaround for Boost not being quite compatible with C++11;
 		std::vector<unsigned char> pka = list_of(102);
@@ -175,9 +194,11 @@ public:
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 18444;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x3d2160a3b5dc4a9d62e7e66a295f70313ac808440ef7400d6c0772171ce973a5"));
+        //TODO
+        //assert(hashGenesisBlock == uint256("0x"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
+        vSeeds.push_back(CDNSSeedData("",""));
     }
 
     virtual bool RequireRPCPassword() const { return false; }

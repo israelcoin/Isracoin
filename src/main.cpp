@@ -1138,6 +1138,7 @@ int64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
     int64_t nSubsidy = 50 * COIN;
 
+    if (!TestNet())
     if(nHeight < 6001)
     {
         nSubsidy = 80000 * COIN;
