@@ -37,7 +37,7 @@ public:
         pchMessageStart[3] = 0x9c;
         vAlertPubKey = ParseHex("04af4780c94216611b0ad88acf18a88a2ed97220a228f22e3af6f02973125d576f874c81d3088988a4fd38820cc807eee415e6abf74d5b5d59c79fcf59e4965830");
         nDefaultPort = 21948;
-        nRPCPort = 21948;
+        nRPCPort = 21947;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         nSubsidyHalvingInterval = 210000;
 
@@ -126,7 +126,7 @@ public:
         pchMessageStart[3] = 0xfc;
         vAlertPubKey = ParseHex("04af4780c94216611b0ad88acf18a88a2ed97220a228f22e3af6f02973125d576f874c81d3088988a4fd38820cc807eee415e6abf74d5b5d59c79fcf59e4965830");
         nDefaultPort = 41930;
-        nRPCPort = 21948;
+        nRPCPort = 41929;
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
