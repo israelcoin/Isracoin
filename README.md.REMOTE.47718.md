@@ -1,9 +1,9 @@
-# Isracoin Core [DOGE, Ð]
+# Dogecoin Core [DOGE, Ð]
 ==========================
 
-#Important
+![Dogecoin](http://static.tumblr.com/ppdj5y9/Ae9mxmxtp/300coin.png)
 
-ISRACOIN 1.7 IS IN ALPHA
+[![Build Status](https://travis-ci.org/dogecoin/dogecoin.svg?branch=1.7-dev)](https://travis-ci.org/dogecoin/dogecoin)
 
 ## What is Dogecoin? – Such coin
 Dogecoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Tenebrix and Litecoin, Dogecoin currently employs a simplified variant of scrypt.

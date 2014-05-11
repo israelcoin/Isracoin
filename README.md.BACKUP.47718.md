@@ -5,6 +5,10 @@
 
 ISRACOIN 1.7 IS IN ALPHA
 
+<<<<<<< HEAD
+## Important 2
+Isracoin 1.7 has no genesis block info, not for the main-net and not for the testnet
+=======
 ## What is Dogecoin? – Such coin
 Dogecoin is a cryptocurrency like Bitcoin, although it does not use SHA256 as its proof of work (POW). Taking development cues from Tenebrix and Litecoin, Dogecoin currently employs a simplified variant of scrypt.
 
@@ -75,3 +79,4 @@ RPC 22555
 P2P 22556
 
 ![](http://dogesay.com/wow//////such/coin)
+>>>>>>> 6eaabf6ad8d3f2aa2cc92121b943e5f8e80cbca1

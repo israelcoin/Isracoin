@@ -4,7 +4,7 @@ define(_CLIENT_VERSION_MAJOR, 1)
 define(_CLIENT_VERSION_MINOR, 7)
 define(_CLIENT_VERSION_REVISION, 0)
 define(_CLIENT_VERSION_BUILD, 0)
-define(_CLIENT_VERSION_IS_RELEASE, false)
+define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2014)
 AC_INIT([Dogecoin Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[info@dogecoin.com],[dogecoin])
 AC_CONFIG_AUX_DIR([src/build-aux])
@@ -266,15 +266,15 @@ if test x$use_lcov == xyes; then
   if test x$GCOV == x; then
     AC_MSG_ERROR("lcov testing requested but gcov not found")
   fi
-  if test x$JAVA == x; then
-    AC_MSG_ERROR("lcov testing requested but java not found")
-  fi
+  #if test x$JAVA == x; then
+  #  AC_MSG_ERROR("lcov testing requested but java not found")
+  #fi
   if test x$GENHTML == x; then
     AC_MSG_ERROR("lcov testing requested but genhtml not found")
   fi
-  if test x$use_comparison_tool == x; then
-    AC_MSG_ERROR("lcov testing requested but comparison tool was not specified")
-  fi
+  #if test x$use_comparison_tool == x; then
+  #  AC_MSG_ERROR("lcov testing requested but comparison tool was not specified")
+  #fi
   LCOV="$LCOV --gcov-tool=$GCOV"
   AX_CHECK_COMPILE_FLAG([--coverage],[CXXFLAGS="$CXXFLAGS --coverage"],
     [AC_MSG_ERROR("lcov testing requested but --coverage flag does not work")])
