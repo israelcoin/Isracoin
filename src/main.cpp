@@ -2824,7 +2824,7 @@ bool LoadBlockIndex()
 		pchMessageStart[1] = 0xfc;
 		pchMessageStart[2] = 0xfc;
 		pchMessageStart[3] = 0xfc;
-		hashGenesisBlock = uint256("0x164286ca09b1282a678f54b1330b16600bc5466a3ec170f8e2ff7bddfb4fcac3");
+		hashGenesisBlock = uint256("0xbe4a278134704fb27473e89633e34baa886705fcccde5315e40532bd6c867921");
     }
 
     //
@@ -2849,7 +2849,7 @@ bool InitBlockIndex() {
 
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
-        const char* pszTimestamp = fTestNet? "Apr-15-2014 Harvard Scientists: 2013 Comet Awards Announced":"Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
+        const char* pszTimestamp = fTestNet? "May 13-2014 ynet: Former PM Ehud Olmert jailed for six years for corruption":"Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2869,8 +2869,8 @@ bool InitBlockIndex() {
 
         if (fTestNet)
 		{
-			block.nTime    = 1398173675;
-			block.nNonce   = 1454211;
+			block.nTime    = 1399980680;
+			block.nNonce   = 548662;
 		}
 
         //// debug print
