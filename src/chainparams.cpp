@@ -130,7 +130,7 @@ public:
         strDataDir = "testnet";
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
-        const char* pszTimestamp = "Apr-15-2014 Harvard Scientists: 2013 Comet Awards Announced";
+        const char* pszTimestamp = "May 13-2014 ynet: Former PM Ehud Olmert jailed for six years for corruption";
         CTransaction txNew;
 		txNew.vin.resize(1);
 		txNew.vout.resize(1);
@@ -143,12 +143,12 @@ public:
 		block.hashPrevBlock = 0;
 		block.hashMerkleRoot = block.BuildMerkleTree();
 		block.nVersion = 1;
-		block.nTime    = 1398173675;  // DRG
+		block.nTime    = 1399980680;  // DRG
 		block.nBits    = 0x1e0ffff0;  //DRG
-		block.nNonce   = 1454211;  //DRG
+		block.nNonce   = 548662;  //DRG
 
 		hashGenesisBlock = block.GetHash();
-        assert(hashGenesisBlock == uint256("0x164286ca09b1282a678f54b1330b16600bc5466a3ec170f8e2ff7bddfb4fcac3"));
+        assert(hashGenesisBlock == uint256("0xbe4a278134704fb27473e89633e34baa886705fcccde5315e40532bd6c867921"));
         genesis = CBlock(block);
 
         vFixedSeeds.clear();
