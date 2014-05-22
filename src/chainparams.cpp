@@ -52,17 +52,15 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 0;
+        genesis.nTime    = 1395078549;
         genesis.nBits    = 0x1e0ffff0;
-        genesis.nNonce   = 0;
+        genesis.nNonce   = 86250;
 
         hashGenesisBlock = genesis.GetHash();
 
         //TODO - add genesis block
-		//assert(hashGenesisBlock == uint256("0x"));
-		//assert(genesis.hashMerkleRoot == uint256("0x"));
-
-
+		assert(hashGenesisBlock == uint256("0x8432ed563657dc92d085fa98b5dfd77975ff50b6bc4be28efe80db615d98a9ae"));
+		assert(genesis.hashMerkleRoot == uint256("0xd77b7d90be4dd2cb7161010ac1ffe803b32adacf2111ac190414451ac2308e1d"));
 
         vSeeds.push_back(CDNSSeedData("israelcoin.org", "dnsseed.israelcoin.org"));
 
@@ -73,6 +71,7 @@ public:
         std::vector<unsigned char> sca = list_of(22);
         base58Prefixes[SCRIPT_ADDRESS] = sca;
         
+        // should be 128 more thatn PUBKEY_ADDRESS
         std::vector<unsigned char> sk  = list_of(158);
         base58Prefixes[SECRET_KEY]     = sk;
         
@@ -163,6 +162,7 @@ public:
 		std::vector<unsigned char> sca = list_of(196);
 		base58Prefixes[SCRIPT_ADDRESS] = sca;
 
+		// should be 128 more thatn PUBKEY_ADDRESS
 		std::vector<unsigned char> sk  = list_of(241);
 		base58Prefixes[SECRET_KEY]     = sk;
 
