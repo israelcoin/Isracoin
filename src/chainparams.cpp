@@ -39,7 +39,6 @@ public:
         nDefaultPort = 21948;
         nRPCPort = 21947;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
-        nSubsidyHalvingInterval = 210000;
 
         const char* pszTimestamp = "Mar-17-2014 Harvard Scientists: First Direct Evidence of Cosmic Inflation";
         CTransaction txNew;
@@ -72,7 +71,7 @@ public:
         base58Prefixes[SCRIPT_ADDRESS] = sca;
         
         // should be 128 more thatn PUBKEY_ADDRESS
-        std::vector<unsigned char> sk  = list_of(158);
+        std::vector<unsigned char> sk  = list_of(230);
         base58Prefixes[SECRET_KEY]     = sk;
         
         std::vector<unsigned char> epk = list_of(0x04)(0x88)(0xC4)(0x2E);
@@ -186,7 +185,7 @@ public:
         pchMessageStart[1] = 0xbf;
         pchMessageStart[2] = 0xb5;
         pchMessageStart[3] = 0xda;
-        nSubsidyHalvingInterval = 150;
+        //nSubsidyHalvingInterval = 150;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         genesis.nTime = 1296688602;
         genesis.nBits = 0x207fffff;
