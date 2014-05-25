@@ -24,11 +24,11 @@ public:
      */
     enum Unit   //Note: preserve positions in order to preserve existing settings
     {
-        DOGE,
-        //formerly mDOGE
-        //formerly uDOGE
-        MDOGE = 3,
-        kDOGE = 4,
+        ISR,
+        //formerly mISR
+        //formerly uISR
+        MISR = 3,
+        kISR = 4,
         Koinu = 5
     };
 

@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
-// Copyright (c) 2013-2014 The Dogecoin developers
+// Copyright (c) 2013-2014 The Isracoin developers
 // Copyright (c)      2014 The Inutoshi developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -32,7 +32,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Dogecoin cannot be compiled without assertions."
+# error "Isracoin cannot be compiled without assertions."
 #endif
 
 //
@@ -75,7 +75,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Dogecoin Signed Message:\n";
+const string strMessageMagic = "Isracoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -393,7 +393,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 
 
 
-//TODO: this isn't identical to dogecoin reference client.
+//TODO: this isn't identical to isracoin reference client.
 bool IsStandardTx(const CTransaction& tx, string& reason)
 {
     if (tx.nVersion > CTransaction::CURRENT_VERSION || tx.nVersion < 1) {
@@ -734,7 +734,7 @@ int64_t GetMinFee(const CTransaction& tx, unsigned int nBytes, bool fAllowFree, 
 #endif
     }
 
-    // Dogecoin
+    // Isracoin
     // To limit dust spam, add nBaseFee for each output less than DUST_SOFT_LIMIT
     BOOST_FOREACH(const CTxOut& txout, tx.vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
@@ -1246,7 +1246,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         return pindexLast->nBits;
     }
 
-    // Dogecoin: This fixes an issue where a 51% attack can change difficulty at will.
+    // Isracoin: This fixes an issue where a 51% attack can change difficulty at will.
     // Go back the full period unless it's the first retarget after genesis. Code courtesy of Art Forz
     int blockstogoback = retargetInterval-1;
     if ((pindexLast->nHeight+1) != retargetInterval)
@@ -1756,7 +1756,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("dogecoin-scriptch");
+    RenameThread("isracoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1801,7 +1801,7 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
         }
     }
 
-    // BIP16 was always active in Dogecoin
+    // BIP16 was always active in Isracoin
     bool fStrictPayToScriptHash = true;
 
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
@@ -2491,7 +2491,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CDiskBlockPos* dbp)
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Dogecoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Isracoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
 
     unsigned int nFound = 0;

@@ -1,5 +1,5 @@
 ---
-name: "dogecoin-deps"
+name: "isracoin-deps"
 suites:
 - "precise"
 architectures:
@@ -126,5 +126,5 @@ script: |
     done
     #
     cd $INSTALLPREFIX
-    find include lib | sort | zip -X@ $OUTDIR/dogecoin-deps-win$BITS-gitian-r11.zip
+    find include lib | sort | zip -X@ $OUTDIR/isracoin-deps-win$BITS-gitian-r11.zip
   done # for BITS in

@@ -1,0 +1,6 @@
+isracoin-qt usr/bin
+share/pixmaps/isracoin32.xpm usr/share/pixmaps
+share/pixmaps/isracoin16.xpm usr/share/pixmaps
+share/pixmaps/isracoin128.png usr/share/pixmaps
+debian/isracoin-qt.desktop usr/share/applications
+debian/isracoin-qt.protocol usr/share/kde4/services/

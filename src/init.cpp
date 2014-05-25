@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
 // Copyright (c)      2014 The Inutoshi developers
-// Copyright (c)      2014 The Dogecoin developers
+// Copyright (c)      2014 The Isracoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -115,7 +115,7 @@ void Shutdown()
     TRY_LOCK(cs_Shutdown, lockShutdown);
     if (!lockShutdown) return;
 
-    RenameThread("dogecoin-shutoff");
+    RenameThread("isracoin-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
     ShutdownRPCMining();
@@ -195,10 +195,10 @@ std::string HelpMessage(HelpMessageMode hmm)
 {
     string strUsage = _("Options:") + "\n";
     strUsage += "  -?                     " + _("This help message") + "\n";
-    strUsage += "  -conf=<file>           " + _("Specify configuration file (default: dogecoin.conf)") + "\n";
+    strUsage += "  -conf=<file>           " + _("Specify configuration file (default: isracoin.conf)") + "\n";
     strUsage += "  -datadir=<dir>         " + _("Specify data directory") + "\n";
     strUsage += "  -testnet               " + _("Use the test network") + "\n";
-    strUsage += "  -pid=<file>            " + _("Specify pid file (default: dogecoind.pid)") + "\n";
+    strUsage += "  -pid=<file>            " + _("Specify pid file (default: isracoind.pid)") + "\n";
     strUsage += "  -gen                   " + _("Generate coins (default: 0)") + "\n";
     strUsage += "  -dbcache=<n>           " + strprintf(_("Set database cache size in megabytes (%d to %d, default: %d)"), nMinDbCache, nMaxDbCache, nDefaultDbCache) + "\n";
     strUsage += "  -timeout=<n>           " + _("Specify connection timeout in milliseconds (default: 5000)") + "\n";
@@ -312,7 +312,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("dogecoin-loadblk");
+    RenameThread("isracoin-loadblk");
 
     // -reindex
     if (fReindex) {
@@ -362,7 +362,7 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
     }
 }
 
-/** Initialize dogecoin.
+/** Initialize isracoin.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2(boost::thread_group& threadGroup)
@@ -588,18 +588,18 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (strWalletFile != boost::filesystem::basename(strWalletFile) + boost::filesystem::extension(strWalletFile))
         return InitError(strprintf(_("Wallet %s resides outside data directory %s"), strWalletFile, strDataDir));
 #endif
-    // Make sure only a single Dogecoin process is using the data directory.
+    // Make sure only a single Isracoin process is using the data directory.
     boost::filesystem::path pathLockFile = GetDataDir() / ".lock";
     FILE* file = fopen(pathLockFile.string().c_str(), "a"); // empty lock file; created if it doesn't exist.
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Dogecoin is probably already running."), strDataDir));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s. Isracoin is probably already running."), strDataDir));
 
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Dogecoin version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
+    LogPrintf("Isracoin version %s (%s)\n", FormatFullVersion(), CLIENT_DATE);
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         LogPrintf("Startup time: %s\n", DateTimeStrFormat("%Y-%m-%d %H:%M:%S", GetTime()));
@@ -973,10 +973,10 @@ bool AppInit2(boost::thread_group& threadGroup)
                 InitWarning(msg);
             }
             else if (nLoadWalletRet == DB_TOO_NEW)
-                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Dogecoin") << "\n";
+                strErrors << _("Error loading wallet.dat: Wallet requires newer version of Isracoin") << "\n";
             else if (nLoadWalletRet == DB_NEED_REWRITE)
             {
-                strErrors << _("Wallet needed to be rewritten: restart Dogecoin Core to complete") << "\n";
+                strErrors << _("Wallet needed to be rewritten: restart Isracoin Core to complete") << "\n";
                 LogPrintf("%s", strErrors.str());
                 return InitError(strErrors.str());
             }

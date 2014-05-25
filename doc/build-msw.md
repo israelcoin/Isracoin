@@ -9,7 +9,7 @@ Compilation under Windows is supported using MinGW (http://www.mingw.org/)
 
 Dependencies
 ------------
-To build Dogecoin for Windows, there are number of libraries you need to download
+To build Isracoin for Windows, there are number of libraries you need to download
 separately and build. Note that, for those used to a Linux/UNIX background, the search
 paths for include files is not the conventional UNIX directories, see
 http://www.mingw.org/wiki/IncludePathHOWTO for more details. Library files can be placed
@@ -101,12 +101,12 @@ MSYS shell:
 	mkdir miniupnpc
 	cp *.h miniupnpc/
 
-Dogecoin
+Isracoin
 -------
 MSYS shell:
 
-	dogecoin
+	isracoin
 	./autogen.sh
 	BOOST_ROOT=../boost_1_55_0 ./configure --disable-tests
 	mingw32-make
-	strip dogecoind.exe
+	strip isracoind.exe

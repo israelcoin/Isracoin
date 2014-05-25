@@ -144,7 +144,7 @@ Value getrawtransaction(const Array& params, bool fHelp)
             "  ],\n"
             "  \"vout\" : [              (array of json objects)\n"
             "     {\n"
-            "       \"value\" : x.xxx,            (numeric) The value in doge\n"
+            "       \"value\" : x.xxx,            (numeric) The value in ISR\n"
             "       \"n\" : n,                    (numeric) index\n"
             "       \"scriptPubKey\" : {          (json object)\n"
             "         \"asm\" : \"asm\",          (string) the asm\n"
@@ -152,7 +152,7 @@ Value getrawtransaction(const Array& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"dogecoinaddress\"        (string) Dogecoin address\n"
+            "           \"isracoinaddress\"        (string) Isracoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -209,9 +209,9 @@ Value listunspent(const Array& params, bool fHelp)
             "\nArguments:\n"
             "1. minconf          (numeric, optional, default=1) The minimum confirmationsi to filter\n"
             "2. maxconf          (numeric, optional, default=9999999) The maximum confirmations to filter\n"
-            "3. \"addresses\"    (string) A json array of Dogecoin addresses to filter\n"
+            "3. \"addresses\"    (string) A json array of Isracoin addresses to filter\n"
             "    [\n"
-            "      \"address\"   (string) Dogecoin address\n"
+            "      \"address\"   (string) Isracoin address\n"
             "      ,...\n"
             "    ]\n"
             "\nResult\n"
@@ -219,10 +219,10 @@ Value listunspent(const Array& params, bool fHelp)
             "  {\n"
             "    \"txid\" : \"txid\",        (string) the transaction id \n"
             "    \"vout\" : n,               (numeric) the vout value\n"
-            "    \"address\" : \"address\",  (string) the Dogecoin address\n"
+            "    \"address\" : \"address\",  (string) the Isracoin address\n"
             "    \"account\" : \"account\",  (string) The associated account, or \"\" for the default account\n"
             "    \"scriptPubKey\" : \"key\", (string) the script key\n"
-            "    \"amount\" : x.xxx,         (numeric) the transaction amount in doge\n"
+            "    \"amount\" : x.xxx,         (numeric) the transaction amount in ISR\n"
             "    \"confirmations\" : n       (numeric) The number of confirmations\n"
             "  }\n"
             "  ,...\n"
@@ -252,7 +252,7 @@ Value listunspent(const Array& params, bool fHelp)
         {
             CBitcoinAddress address(input.get_str());
             if (!address.IsValid())
-                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Dogecoin address: ")+input.get_str());
+                throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Isracoin address: ")+input.get_str());
             if (setAddress.count(address))
                 throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+input.get_str());
            setAddress.insert(address);
@@ -332,7 +332,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
             "     ]\n"
             "2. \"addresses\"           (string, required) a json object with addresses as keys and amounts as values\n"
             "    {\n"
-            "      \"address\": x.xxx   (numeric, required) The key is the Dogecoin address, the value is the doge amount\n"
+            "      \"address\": x.xxx   (numeric, required) The key is the Isracoin address, the value is the ISR amount\n"
             "      ,...\n"
             "    }\n"
 
@@ -373,7 +373,7 @@ Value createrawtransaction(const Array& params, bool fHelp)
     {
         CBitcoinAddress address(s.name_);
         if (!address.IsValid())
-            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Dogecoin address: ")+s.name_);
+            throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, string("Invalid Isracoin address: ")+s.name_);
 
         if (setAddress.count(address))
             throw JSONRPCError(RPC_INVALID_PARAMETER, string("Invalid parameter, duplicated address: ")+s.name_);
@@ -422,7 +422,7 @@ Value decoderawtransaction(const Array& params, bool fHelp)
             "  ],\n"
             "  \"vout\" : [             (array of json objects)\n"
             "     {\n"
-            "       \"value\" : x.xxx,            (numeric) The value in doge\n"
+            "       \"value\" : x.xxx,            (numeric) The value in ISR\n"
             "       \"n\" : n,                    (numeric) index\n"
             "       \"scriptPubKey\" : {          (json object)\n"
             "         \"asm\" : \"asm\",          (string) the asm\n"
@@ -430,7 +430,7 @@ Value decoderawtransaction(const Array& params, bool fHelp)
             "         \"reqSigs\" : n,            (numeric) The required sigs\n"
             "         \"type\" : \"pubkeyhash\",  (string) The type, eg 'pubkeyhash'\n"
             "         \"addresses\" : [           (json array of string)\n"
-            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) Dogecoin address\n"
+            "           \"12tvKAXCxZjSmdNbao16dKXC8tRWfcF5oc\"   (string) Isracoin address\n"
             "           ,...\n"
             "         ]\n"
             "       }\n"
@@ -479,7 +479,7 @@ Value decodescript(const Array& params, bool fHelp)
             "  \"type\":\"type\", (string) The output type\n"
             "  \"reqSigs\": n,    (numeric) The required signatures\n"
             "  \"addresses\": [   (json array of string)\n"
-            "     \"address\"     (string) Dogecoin address\n"
+            "     \"address\"     (string) Isracoin address\n"
             "     ,...\n"
             "  ],\n"
             "  \"p2sh\",\"address\" (string) script address\n"

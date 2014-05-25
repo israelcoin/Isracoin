@@ -3,12 +3,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Dogecoin Core</source>
+        <source>About Isracoin Core</source>
         <translation>關於狗狗幣核心</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Isracoin Core&lt;/b&gt; version</source>
         <translation>&lt;b&gt;狗狗幣&lt;/b&gt;版本</translation>
     </message>
     <message>
@@ -33,7 +33,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Dogecoin Core developers</source>
+        <source>The Isracoin Core developers</source>
         <translation>狗狗幣開發人員</translation>
     </message>
 </context>
@@ -121,12 +121,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Isracoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>這是你用來付款的狗狗幣地址. 在付錢之前, 務必要檢查金額和收款地址是否正確.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Isracoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation>這些是你用來收款的狗狗幣位址。建議在每次交易時，都使用一個新的收款位址。</translation>
     </message>
     <message>
@@ -247,7 +247,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ISRACOINS&lt;/b&gt;!</source>
         <translation>警告: 如果將錢包加密後忘記密碼, 你會&lt;b&gt;失去其中所有的狗狗幣&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -274,7 +274,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
+        <source>Isracoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Isracoins from being stolen by malware infecting your computer.</source>
         <translation>狗狗幣現在要關閉以完成加密程序. 請記住, 加密錢包無法完全防止入侵電腦的惡意程式偷取你的狗狗幣.</translation>
     </message>
     <message>
@@ -368,7 +368,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Dogecoin</source>
+        <source>Show information about Isracoin</source>
         <translation>顯示狗狗幣相關資訊</translation>
     </message>
     <message>
@@ -429,12 +429,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Dogecoin address</source>
+        <source>Send coins to a Isracoin address</source>
         <translation>付錢到狗狗幣地址</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Dogecoin</source>
+        <source>Modify configuration options for Isracoin</source>
         <translation>修改狗狗幣的設定選項</translation>
     </message>
     <message>
@@ -464,7 +464,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+430"/>
-        <source>Dogecoin</source>
+        <source>Isracoin</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
+        <source>Sign messages with your Isracoin addresses to prove you own them</source>
         <translation>用狗狗幣地址簽署訊息來證明那是你的</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Isracoin addresses</source>
         <translation>驗證訊息來確認是用指定的狗狗幣地址簽署的</translation>
     </message>
     <message>
@@ -536,18 +536,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-401"/>
-        <source>Dogecoin Core</source>
+        <source>Isracoin Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and isracoin: URIs)</source>
         <translation>要求付款(產生 QR Code 和狗狗幣付款協議的 URI)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Dogecoin Core</source>
+        <source>&amp;About Isracoin Core</source>
         <translation>關於狗狗幣核心</translation>
     </message>
     <message>
@@ -562,8 +562,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>開啓 dogecoin 協議的 URI 或付款要求</translation>
+        <source>Open a isracoin: URI or payment request</source>
+        <translation>開啓 isracoin 協議的 URI 或付款要求</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -572,18 +572,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin command-line options</source>
+        <source>Show the Isracoin Core help message to get a list with possible Isracoin command-line options</source>
         <translation>顯示狗狗幣核心的說明訊息，來取得可用命令列選項的列表</translation>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Dogecoin client</source>
+        <source>Isracoin client</source>
         <translation>狗狗幣客戶端軟體</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Dogecoin network</source>
+        <source>%n active connection(s) to Isracoin network</source>
         <translation><numerusform>與狗狗幣網路有 %n 個連線在使用中</numerusform></translation>
     </message>
     <message>
@@ -691,7 +691,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Dogecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Isracoin can no longer continue safely and will quit.</source>
         <translation>發生了致命的錯誤. 狗狗幣程式無法再繼續安全執行, 只好結束.</translation>
     </message>
 </context>
@@ -1049,7 +1049,7 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Isracoin address.</source>
         <translation>輸入的位址 %1 並不是有效的狗狗幣位址。</translation>
     </message>
     <message>
@@ -1095,12 +1095,12 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Dogecoin Core - Command-line options</source>
+        <source>Isracoin Core - Command-line options</source>
         <translation>狗狗幣核心 - 命令列選項</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Dogecoin Core</source>
+        <source>Isracoin Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
@@ -1153,17 +1153,17 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Dogecoin Core.</source>
+        <source>Welcome to Isracoin Core.</source>
         <translation>歡迎使用狗狗幣核心</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
+        <source>As this is the first time the program is launched, you can choose where Isracoin Core will store its data.</source>
         <translation>因為這是程式第一次啓動，你可以選擇狗狗幣核心儲存資料的地方。</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>Isracoin Core will download and store a copy of the Isracoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation>狗狗幣核心會下載並儲存一份狗狗幣區塊鏈的拷貝。至少有 %1GB 的資料會儲存到這個目錄中，並且還會持續增長。另外錢包資料也會儲存在這個目錄。</translation>
     </message>
     <message>
@@ -1178,7 +1178,7 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Dogecoin</source>
+        <source>Isracoin</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -1254,12 +1254,12 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Dogecoin after logging in to the system.</source>
+        <source>Automatically start Isracoin after logging in to the system.</source>
         <translation>在登入系統後自動啓動狗狗幣軟體。</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Dogecoin on system login</source>
+        <source>&amp;Start Isracoin on system login</source>
         <translation>系統登入時啟動狗狗幣</translation>
     </message>
     <message>
@@ -1289,7 +1289,7 @@ Address: %4
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <source>Connect to the Isracoin network through a SOCKS proxy.</source>
         <translation>透過 SOCKS 代理伺服器連線至狗狗幣網路.</translation>
     </message>
     <message>
@@ -1324,7 +1324,7 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Isracoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>自動在路由器上開放狗狗幣的客戶端通訊埠。只有在你的路由器支援且開啓通用即插即用(UPnP)協定時才有作用。</translation>
     </message>
     <message>
@@ -1394,7 +1394,7 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Isracoin.</source>
         <translation>可以在這裡設定使用者介面的語言。這個設定在重啓狗狗幣軟體後才會生效。</translation>
     </message>
     <message>
@@ -1409,7 +1409,7 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
+        <source>Whether to show Isracoin addresses in the transaction list or not.</source>
         <translation>是否要在交易列表中顯示狗狗幣位址。</translation>
     </message>
     <message>
@@ -1484,7 +1484,7 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Isracoin network after a connection is established, but this process has not completed yet.</source>
         <translation>顯示的資訊可能是過期的. 與狗狗幣網路的連線建立後, 你的錢包會自動和網路同步, 但這個步驟還沒完成.</translation>
     </message>
     <message>
@@ -1554,7 +1554,7 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Isracoin address or malformed URI parameters.</source>
         <translation>沒辦法解析 URI 位址！可能是因為狗狗幣位址無效，或是 URI 參數格式錯誤。</translation>
     </message>
     <message>
@@ -1574,8 +1574,8 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start dogecoin: click-to-pay handler</source>
-        <translation>沒辦法啟動 dogecoin 協議的按就付處理器</translation>
+        <source>Cannot start isracoin: click-to-pay handler</source>
+        <translation>沒辦法啟動 isracoin 協議的按就付處理器</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1643,7 +1643,7 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Dogecoin</source>
+        <source>Isracoin</source>
         <translation>狗狗幣</translation>
     </message>
     <message>
@@ -1658,7 +1658,7 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>輸入狗狗幣地址 (比如說 DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
@@ -1819,7 +1819,7 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Dogecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Isracoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>從目前的資料目錄下開啓狗狗幣的除錯紀錄檔. 當紀錄檔很大時可能要花好幾秒的時間.</translation>
     </message>
     <message>
@@ -1829,7 +1829,7 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Dogecoin RPC console.</source>
+        <source>Welcome to the Isracoin RPC console.</source>
         <translation>歡迎使用狗狗幣 RPC 主控台.</translation>
     </message>
     <message>
@@ -1908,7 +1908,7 @@ Address: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Isracoin network.</source>
         <translation>附加在付款要求中的訊息，可以不填，打開要求內容時會顯示。注意: 這個訊息不會隨著付款送到狗狗幣網路上。</translation>
     </message>
     <message>
@@ -2304,7 +2304,7 @@ Address: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Dogecoin address</source>
+        <source>Warning: Invalid Isracoin address</source>
         <translation>警告: 狗狗幣位址無效</translation>
     </message>
     <message>
@@ -2416,7 +2416,7 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the dogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <source>A message that was attached to the isracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Isracoin network.</source>
         <translation>附加在狗狗幣付款協議 URI 中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到狗狗幣網路上。</translation>
     </message>
     <message>
@@ -2441,7 +2441,7 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Dogecoin Core is shutting down...</source>
+        <source>Isracoin Core is shutting down...</source>
         <translation>狗狗幣核心正在關閉中...</translation>
     </message>
     <message>
@@ -2511,7 +2511,7 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Dogecoin address</source>
+        <source>Sign the message to prove you own this Isracoin address</source>
         <translation>簽署訊息是用來證明這個狗狗幣地址是你的</translation>
     </message>
     <message>
@@ -2547,7 +2547,7 @@ Address: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Isracoin address</source>
         <translation>驗證訊息是用來確認訊息是用指定的狗狗幣地址簽署的</translation>
     </message>
     <message>
@@ -2562,7 +2562,7 @@ Address: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
         <translation>輸入狗狗幣地址 (比如說 DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
@@ -2641,12 +2641,12 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Dogecoin Core</source>
+        <source>Isracoin Core</source>
         <translation>狗狗幣核心</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Dogecoin Core developers</source>
+        <source>The Isracoin Core developers</source>
         <translation>狗狗幣開發人員</translation>
     </message>
     <message>
@@ -3214,7 +3214,7 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>dogecoin-core</name>
+    <name>isracoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3237,13 +3237,13 @@ Address: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: dogecoin.conf)</source>
-        <translation>指定設定檔(預設值: dogecoin.conf)</translation>
+        <source>Specify configuration file (default: isracoin.conf)</source>
+        <translation>指定設定檔(預設值: isracoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: dogecoind.pid)</source>
-        <translation>指定行程識別碼(PID)檔(預設值:  dogecoind.pid)</translation>
+        <source>Specify pid file (default: isracoind.pid)</source>
+        <translation>指定行程識別碼(PID)檔(預設值:  isracoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3321,25 +3321,25 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dogecoinrpc
+rpcuser=isracoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Isracoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, 你必須要在以下設定檔中設定 RPC 密碼(rpcpassword):
 %s
 建議你使用以下隨機產生的密碼:
-rpcuser=dogecoinrpc
+rpcuser=isracoinrpc
 rpcpassword=%s
 (你不用記住這個密碼)
 使用者名稱(rpcuser)和密碼(rpcpassword)不可以相同！
 如果還沒有這個設定檔，請在造出來的時候，設定檔案權限成「只有主人才能讀取」。
 也建議你設定警示通知，發生問題時你才會被通知到；
 比如說設定成:
-alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</translation>
+alertnotify=echo %%s | mail -s &quot;Isracoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -3358,7 +3358,7 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Isracoin Core is probably already running.</source>
         <translation>無法鎖定資料目錄 %s. 也許狗狗幣已經在執行了.</translation>
     </message>
     <message>
@@ -3403,7 +3403,7 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Isracoin will not work properly.</source>
         <translation>警告: 請檢查電腦時間與日期是否正確! 狗狗幣無法在時鐘不準的情況下正常運作.</translation>
     </message>
     <message>
@@ -3438,12 +3438,12 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Dogecoin Core Daemon</source>
+        <source>Isracoin Core Daemon</source>
         <translation>狗狗幣核心護靈</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Dogecoin RPC client version</source>
+        <source>Isracoin RPC client version</source>
         <translation>狗狗幣 RPC 客戶端軟體版本</translation>
     </message>
     <message>
@@ -3643,7 +3643,7 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Dogecoin server</source>
+        <source>Send command to Isracoin server</source>
         <translation>傳送指令給狗狗幣伺服器</translation>
     </message>
     <message>
@@ -3663,7 +3663,7 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Dogecoin server</source>
+        <source>Start Isracoin server</source>
         <translation>啟動狗狗幣伺服器</translation>
     </message>
     <message>
@@ -3673,8 +3673,8 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use dogecoin-cli):</source>
-        <translation>用法(已過時，請改用 dogecoin-cli):</translation>
+        <source>Usage (deprecated, use isracoin-cli):</source>
+        <translation>用法(已過時，請改用 isracoin-cli):</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3938,12 +3938,12 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Isracoin</source>
         <translation>載入 wallet.dat 檔案時發生錯誤: 這個錢包需要新版的狗狗幣軟體</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Dogecoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Isracoin to complete</source>
         <translation>錢包需要重寫: 請重啟狗狗幣來完成</translation>
     </message>
     <message>
@@ -4003,7 +4003,7 @@ alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com</transla
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Isracoin Core is probably already running.</source>
         <translation>無法和這台電腦上的 %s 繫結. 也許狗狗幣已經在執行了.</translation>
     </message>
     <message>

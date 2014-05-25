@@ -398,7 +398,7 @@ void TransactionView::viewOnDogechain()
     QModelIndexList selection = transactionView->selectionModel()->selectedRows();
     if(!selection.isEmpty())
     {
-        QString format("http://dogechain.info/tx/");
+        QString format("http://ISRchain.info/tx/");
         QString munged = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
         format += munged.left(munged.lastIndexOf("-"));
         

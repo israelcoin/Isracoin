@@ -34,7 +34,7 @@ Enable bridging interface for networking:
 
 Once you've got the right hardware and software:
 
-    git clone git://github.com/dogecoin/dogecoin.git
+    git clone git://github.com/isracoin/isracoin.git
     git clone git://github.com/devrandom/gitian-builder.git
 
 Prepare the builder VMs:

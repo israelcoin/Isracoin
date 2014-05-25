@@ -25,7 +25,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::DOGE)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::ISR)
     {
 
     }
@@ -122,9 +122,9 @@ OverviewPage::OverviewPage(QWidget *parent) :
     ui->labelTransactionsStatus->setText("(" + tr("out of sync") + ")");
 
     // Customized branding image.
-    boost::filesystem::path dogepath = GetDataDir(false);
-    dogepath /= "dogecoin.png";
-    QPixmap shibecoin(dogepath.string().c_str());
+    boost::filesystem::path ISRpath = GetDataDir(false);
+    ISRpath /= "isracoin.png";
+    QPixmap shibecoin(ISRpath.string().c_str());
 
     if ( !shibecoin.isNull() ) {
         ui->label_wallet_bgcoin->setPixmap(shibecoin);
@@ -198,7 +198,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
-    // update the display unit, to not use the default ("DOGE")
+    // update the display unit, to not use the default ("ISR")
     updateDisplayUnit();
 }
 

@@ -16,9 +16,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(MDOGE);
-    unitlist.append(kDOGE);
-    unitlist.append(DOGE);
+    unitlist.append(MISR);
+    unitlist.append(kISR);
+    unitlist.append(ISR);
     unitlist.append(Koinu);
     return unitlist;
 }
@@ -27,9 +27,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case MDOGE:
-    case kDOGE:
-    case DOGE:
+    case MISR:
+    case kISR:
+    case ISR:
     case Koinu:
         return true;
     default:
@@ -41,9 +41,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return QString("MDOGE");
-    case kDOGE: return QString("kDOGE");
-    case DOGE: return QString("DOGE");
+    case MISR: return QString("MISR");
+    case kISR: return QString("kISR");
+    case ISR: return QString("ISR");
     case Koinu: return QString("Koinu");
     default: return QString("???");
     }
@@ -53,9 +53,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return QString("Mega-Dogecoin (1,000,000 DOGE)");
-    case kDOGE: return QString("Kilo-Dogecoin (1000 DOGE)");
-    case DOGE: return QString("Dogecoin");
+    case MISR: return QString("Mega-Isracoin (1,000,000 ISR)");
+    case kISR: return QString("Kilo-Isracoin (1000 ISR)");
+    case ISR: return QString("Isracoin");
     case Koinu: return QString("Koinu (1 / 100,000,000");
     default: return QString("???");
     }
@@ -65,9 +65,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return Q_INT64_C(100000000000000);
-    case kDOGE: return Q_INT64_C(100000000000);
-    case DOGE:  return Q_INT64_C(100000000);
+    case MISR: return Q_INT64_C(100000000000000);
+    case kISR: return Q_INT64_C(100000000000);
+    case ISR:  return Q_INT64_C(100000000);
     case Koinu: return Q_INT64_C(1);
     default:    return Q_INT64_C(100000000);
     }
@@ -77,9 +77,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return Q_INT64_C(900000);
-    case kDOGE: return Q_INT64_C(900000000);
-    case DOGE:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
+    case MISR: return Q_INT64_C(900000);
+    case kISR: return Q_INT64_C(900000000);
+    case ISR:  return Q_INT64_C(900000000000);    //less than the coin supply until the year 2170
     case Koinu: return Q_INT64_C(9000000000000000000); // Slightly under max value for int64
     default:   return 0;
     }
@@ -89,9 +89,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return 6;  // 900,000 (# digits, without commas)
-    case kDOGE: return 9;  // 900,000,000
-    case DOGE:  return 12; // 900,000,000,000
+    case MISR: return 6;  // 900,000 (# digits, without commas)
+    case kISR: return 9;  // 900,000,000
+    case ISR:  return 12; // 900,000,000,000
     case Koinu: return 19; // 9,000,000,000,000,000,000
     default: return 0;
     }
@@ -101,9 +101,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case MDOGE: return 14;
-    case kDOGE: return 11;
-    case DOGE: return 8;
+    case MISR: return 14;
+    case kISR: return 11;
+    case ISR: return 8;
     case Koinu: return 0;
     default: return 0;
     }

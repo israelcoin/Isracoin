@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build dogecoind(headless client) for OSX.
+This guide will show you how to build isracoind(headless client) for OSX.
 
 Notes
 -----
@@ -52,14 +52,14 @@ Optional: install Qt4
 
     sudo port install qt4-mac qrencode protobuf-cpp
 
-### Building `dogecoind`
+### Building `isracoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:dogecoin/dogecoin.git dogecoin
-        cd dogecoin
+        git clone git@github.com:isracoin/isracoin.git isracoin
+        cd isracoin
 
-2.  Build dogecoind (and Dogecoin-Qt, if configured):
+2.  Build isracoind (and Isracoin-Qt, if configured):
 
         ./autogen.sh
         ./configure
@@ -88,14 +88,14 @@ If not, you can ensure that the Homebrew OpenSSL is correctly linked by running
 
 Rerunning "openssl version" should now return the correct version.
 
-### Building `dogecoind`
+### Building `isracoind`
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone https://github.com/dogecoin/dogecoin.git
-        cd dogecoin
+        git clone https://github.com/isracoin/isracoin.git
+        cd isracoin
 
-2.  Build dogecoind:
+2.  Build isracoind:
 
         ./autogen.sh
         ./configure
@@ -107,11 +107,11 @@ Rerunning "openssl version" should now return the correct version.
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `dogecoind` for your own use.
+You can ignore this section if you are building `isracoind` for your own use.
 
-dogecoind/dogecoin-cli binaries are not included in the Dogecoin-Qt.app bundle.
+isracoind/isracoin-cli binaries are not included in the Isracoin-Qt.app bundle.
 
-If you are building `dogecoind` or `Dogecoin-Qt` for others, your build machine should be set up
+If you are building `isracoind` or `Isracoin-Qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -132,29 +132,29 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix.
 
-Once dependencies are compiled, see release-process.md for how the Dogecoin-Qt.app
+Once dependencies are compiled, see release-process.md for how the Isracoin-Qt.app
 bundle is packaged and signed to create the .dmg disk image that is distributed.
 
 Running
 -------
 
-It's now available at `./dogecoind`, provided that you are still in the `src`
+It's now available at `./isracoind`, provided that you are still in the `src`
 directory. We have to first create the RPC configuration file, though.
 
-Run `./dogecoind` to get the filename where it should be put, or just try these
+Run `./isracoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=dogecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Dogecoin/dogecoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Dogecoin/dogecoin.conf"
+    echo -e "rpcuser=isracoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Isracoin/isracoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Isracoin/isracoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours;
 you can monitor its process by looking at the debug.log file, like this:
 
-    tail -f $HOME/Library/Application\ Support/Dogecoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Isracoin/debug.log
 
 Other commands:
 
-    ./dogecoind -daemon # to start the dogecoin daemon.
-    ./dogecoin-cli --help  # for a list of command-line options.
-    ./dogecoin-cli help    # When the daemon is running, to get a list of RPC commands
+    ./isracoind -daemon # to start the isracoin daemon.
+    ./isracoin-cli --help  # for a list of command-line options.
+    ./isracoin-cli help    # When the daemon is running, to get a list of RPC commands

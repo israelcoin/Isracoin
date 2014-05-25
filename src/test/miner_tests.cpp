@@ -12,7 +12,7 @@ extern void SHA256Transform(void* pstate, void* pinput, const void* pinit);
 BOOST_AUTO_TEST_SUITE(miner_tests)
 
 // this array of extranonce/nonce combinations has been generated
-// to be replayed on top of the DOGECOIN genesis block.
+// to be replayed on top of the ISRACOIN genesis block.
 static
 struct {
     unsigned char extranonce;
@@ -48,7 +48,7 @@ struct {
 // NOTE: These tests rely on CreateNewBlock doing its own self-validation!
 BOOST_AUTO_TEST_CASE(CreateNewBlock_validity)
 {
-    // changed this to dogecoin genesis pubkey script
+    // changed this to isracoin genesis pubkey script
     CScript scriptPubKey = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     CBlockTemplate *pblocktemplate;
     CTransaction tx,tx2;

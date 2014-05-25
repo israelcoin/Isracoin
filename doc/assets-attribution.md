@@ -97,8 +97,8 @@ Jonas Schnelli
 * License: MIT
 
 ### Assets Used
-	src/qt/res/icons/dogecoin.icns, src/qt/res/src/dogecoin.svg,
-	src/qt/res/src/dogecoin.ico, src/qt/res/src/dogecoin.png,
-	src/qt/res/src/dogecoin_testnet.png, docs/dogecoin_logo_doxygen.png,
+	src/qt/res/icons/isracoin.icns, src/qt/res/src/isracoin.svg,
+	src/qt/res/src/isracoin.ico, src/qt/res/src/isracoin.png,
+	src/qt/res/src/isracoin_testnet.png, docs/isracoin_logo_doxygen.png,
 	src/qt/res/icons/toolbar.png, src/qt/res/icons/toolbar_testnet.png,
 	src/qt/res/images/splash.png, src/qt/res/images/splash_testnet.png

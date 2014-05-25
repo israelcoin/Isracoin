@@ -1,11 +1,11 @@
 --- 
-name: dogecoin
+name: isracoin
 urls:
-- http://example.org/dogecoin-latest-win32-gitian.zip
+- http://example.org/isracoin-latest-win32-gitian.zip
 rss:
 - url: http://sourceforge.net/api/file/index/project-id/244765/mtime/desc/limit/100/rss
   xpath: //item/link/text()
-  pattern: dogecoin-\d+.\d+.\d+-win32-gitian.zip
+  pattern: isracoin-\d+.\d+.\d+-win32-gitian.zip
 signers:
   90DC2AC256201AD9377E15049142E5F7E533CE3B:
     weight: 40

@@ -13,14 +13,14 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "%s, you must set a rpcpassword in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
-"rpcuser=dogecoinrpc\n"
+"rpcuser=isracoinrpc\n"
 "rpcpassword=%s\n"
 "(you do not need to remember this password)\n"
 "The username and password MUST NOT be the same.\n"
 "If the file does not exist, create it with owner-readable-only file "
 "permissions.\n"
 "It is also recommended to set alertnotify so you are notified of problems;\n"
-"for example: alertnotify=echo %%s | mail -s \"Dogecoin Alert\" admin@foo."
+"for example: alertnotify=echo %%s | mail -s \"Isracoin Alert\" admin@foo."
 "com\n"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Acceptable ciphers (default: TLSv1.2+HIGH:TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!"
@@ -34,7 +34,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Bind to given address and always listen on it. Use [host]:port notation for "
 "IPv6"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Cannot obtain a lock on data directory %s. Dogecoin is probably already "
+"Cannot obtain a lock on data directory %s. Isracoin is probably already "
 "running."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Enter regression test mode, which uses a special chain in which blocks can "
@@ -77,7 +77,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "This is a pre-release test build - use at your own risk - do not use for "
 "mining or merchant applications"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Unable to bind to %s on this computer. Dogecoin Core Daemon is probably "
+"Unable to bind to %s on this computer. Isracoin Core Daemon is probably "
 "already running."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: -"
@@ -90,7 +90,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "or other nodes may need to upgrade."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong Dogecoin will not work properly."),
+"your clock is wrong Isracoin will not work properly."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: The network does not appear to fully agree! Some miners appear to "
 "be experiencing issues."),
@@ -128,15 +128,15 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Discover own IP address (default: 1 when listening and no -externalip)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Do not load the wallet and disable wallet RPC calls"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Do you want to rebuild the block database now?"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Dogecoin Core Daemon"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Dogecoin RPC client version"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Isracoin Core Daemon"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Isracoin RPC client version"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Done loading"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error initializing block database"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error initializing wallet database environment %s!"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error loading block database"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat: Wallet corrupted"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat: Wallet requires newer version of Dogecoin"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Error loading wallet.dat: Wallet requires newer version of Isracoin"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error opening block database"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error: Disk space is low!"),
@@ -192,7 +192,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Rescanning..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Run in the background as a daemon and accept commands"),
 QT_TRANSLATE_NOOP("bitcoin-core", "SSL options: (see the Bitcoin Wiki for SSL setup instructions)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Select SOCKS version for -proxy (4 or 5, default: 5)"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Send command to Dogecoin server"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Send command to Isracoin server"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Send commands to node running on <ip> (default: 127.0.0.1)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Send trace/debug info to console instead of debug.log file"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Server certificate file (default: server.cert)"),
@@ -204,14 +204,14 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Set minimum block size in bytes (default: 0)"
 QT_TRANSLATE_NOOP("bitcoin-core", "Set the number of threads to service RPC calls (default: 4)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Shrink debug.log file on client startup (default: 1 when no -debug)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Signing transaction failed"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: dogecoin.conf)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: isracoin.conf)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify connection timeout in milliseconds (default: 5000)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify data directory"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Specify pid file (default: dogecoind.pid)"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Specify pid file (default: isracoind.pid)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify wallet file (within data directory)"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify your own public address"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Spend unconfirmed change when sending transactions (default: 1)"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Start Dogecoin server"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Start Isracoin server"),
 QT_TRANSLATE_NOOP("bitcoin-core", "System error: "),
 QT_TRANSLATE_NOOP("bitcoin-core", "This help message"),
 QT_TRANSLATE_NOOP("bitcoin-core", "This is intended for regression testing tools and app development."),
@@ -224,7 +224,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Unable to bind to %s on this computer (bind r
 QT_TRANSLATE_NOOP("bitcoin-core", "Unknown -socks proxy version requested: %i"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Unknown network specified in -onlynet: '%s'"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Upgrade wallet to latest format"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Usage (deprecated, use dogecoin-cli):"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Usage (deprecated, use isracoin-cli):"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Usage:"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Use OpenSSL (https) for JSON-RPC connections"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Use UPnP to map the listening port (default: 0)"),
@@ -235,7 +235,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Wait for RPC server to start"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Wallet %s resides outside data directory %s"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Wallet needed to be rewritten: restart Dogecoin Core to complete"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Wallet needed to be rewritten: restart Isracoin Core to complete"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Wallet options:"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Warning"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Warning: Deprecated argument -debugnet ignored, use -debug=net"),

@@ -69,10 +69,10 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
     }
 
     //test sum +- ~10billion
-    uint256 upperlimit = uint256("95e14ec776380000"); //108 billion doge
+    uint256 upperlimit = uint256("95e14ec776380000"); //108 billion ISR
     BOOST_CHECK(nSum <= upperlimit);
     
-    uint256 lowerlimit = uint256("7a1fe16027700000"); //88 billion doge
+    uint256 lowerlimit = uint256("7a1fe16027700000"); //88 billion ISR
     BOOST_CHECK(nSum >= lowerlimit);
     
     //test infinitely increasing block rewards

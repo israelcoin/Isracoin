@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2011-2013 The Litecoin developers
-// Copyright (c) 2013-2014 The Dogecoin developers
+// Copyright (c) 2013-2014 The Isracoin developers
 // Copyright (c)      2014 The Inutoshi developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -304,14 +304,14 @@ inline bool AllowFree(double dPriority)
 {
     // Large (in bytes) low-priority (new, small-coin) transactions
     // need a fee.
-        return dPriority > 100 * COIN * 1440 / 250; // Dogecoin: 1440 blocks found a day. Priority cutoff is 100 dogecoin day / 250 bytes.
+        return dPriority > 100 * COIN * 1440 / 250; // Isracoin: 1440 blocks found a day. Priority cutoff is 100 isracoin day / 250 bytes.
     }
 
 /** Get the maturity depth for coinbase transactions at a given height.
     @param[in] nHeight  The height at which to check maturity for
     @return the depth at which the coinbase transaction matures
  */
-// Dogecoin specific implementation, standardizes checks for the hard maturity change at block 145k
+// Isracoin specific implementation, standardizes checks for the hard maturity change at block 145k
 int GetRequiredMaturityDepth(int nHeight);
 
 

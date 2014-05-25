@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Dogecoin Core</source>
-        <translation>Sobre o Núcleo Dogecoin</translation>
+        <source>About Isracoin Core</source>
+        <translation>Sobre o Núcleo Isracoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Dogecoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Dogecoin Core&lt;/b&gt; versão</translation>
+        <source>&lt;b&gt;Isracoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Isracoin Core&lt;/b&gt; versão</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Dogecoin Core developers</source>
-        <translation>Os programadores Dogecoin</translation>
+        <source>The Isracoin Core developers</source>
+        <translation>Os programadores Isracoin</translation>
     </message>
 </context>
 <context>
@@ -121,13 +121,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Dogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Estes são os seus endereços Dogecoin para enviar pagamentos. Verifique sempre o valor e a morada de envio antes de enviar moedas.</translation>
+        <source>These are your Isracoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Estes são os seus endereços Isracoin para enviar pagamentos. Verifique sempre o valor e a morada de envio antes de enviar moedas.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Dogecoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Estes são os seus endereços Dogecoin para receber pagamentos. É recomendado que utilize um endereço novo para cada transacção.</translation>
+        <source>These are your Isracoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Estes são os seus endereços Isracoin para receber pagamentos. É recomendado que utilize um endereço novo para cada transacção.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -247,8 +247,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DOGECOINS&lt;/b&gt;!</source>
-        <translation>Atenção: Se encriptar a carteira e perder a sua senha irá &lt;b&gt;PERDER TODOS OS SEUS DOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ISRACOINS&lt;/b&gt;!</source>
+        <translation>Atenção: Se encriptar a carteira e perder a sua senha irá &lt;b&gt;PERDER TODOS OS SEUS ISRACOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -274,8 +274,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Dogecoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Dogecoins from being stolen by malware infecting your computer.</source>
-        <translation>O cliente Dogecoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus dogecoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
+        <source>Isracoin Core will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Isracoins from being stolen by malware infecting your computer.</source>
+        <translation>O cliente Isracoin irá agora ser fechado para terminar o processo de encriptação. Recorde que a encriptação da sua carteira não protegerá totalmente os seus isracoins de serem roubados por programas maliciosos que infectem o seu computador.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -368,8 +368,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Dogecoin Core</source>
-        <translation>Mostrar informação sobre Dogecoin</translation>
+        <source>Show information about Isracoin Core</source>
+        <translation>Mostrar informação sobre Isracoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -429,13 +429,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Dogecoin address</source>
-        <translation>Enviar moedas para um endereço dogecoin</translation>
+        <source>Send coins to a Isracoin address</source>
+        <translation>Enviar moedas para um endereço isracoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Dogecoin Core</source>
-        <translation>Modificar opções de configuração para dogecoin</translation>
+        <source>Modify configuration options for Isracoin Core</source>
+        <translation>Modificar opções de configuração para isracoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -464,8 +464,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+430"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Isracoin</source>
+        <translation>Isracoin</translation>
     </message>
     <message>
         <location line="-643"/>
@@ -500,13 +500,13 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Dogecoin addresses to prove you own them</source>
-        <translation>Assine mensagens com os seus endereços Dogecoin para provar que os controla</translation>
+        <source>Sign messages with your Isracoin addresses to prove you own them</source>
+        <translation>Assine mensagens com os seus endereços Isracoin para provar que os controla</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Dogecoin addresses</source>
-        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Dogecoin especificado</translation>
+        <source>Verify messages to ensure they were signed with specified Isracoin addresses</source>
+        <translation>Verifique mensagens para assegurar que foram assinadas com o endereço Isracoin especificado</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -536,19 +536,19 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="-401"/>
-        <source>Dogecoin Core</source>
-        <translation>Núcleo Dogecoin</translation>
+        <source>Isracoin Core</source>
+        <translation>Núcleo Isracoin</translation>
     </message>
     <message>
         <location line="+163"/>
-        <source>Request payments (generates QR codes and dogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and isracoin: URIs)</source>
         <translation>Solicitar pagamentos (gera códigos QR)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Dogecoin Core</source>
-        <translation>&amp;Sobre o Núcleo Dogecoin</translation>
+        <source>&amp;About Isracoin Core</source>
+        <translation>&amp;Sobre o Núcleo Isracoin</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -562,8 +562,8 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a dogecoin: URI or payment request</source>
-        <translation>Abrir dogecoin: link ou pedido de pagamento</translation>
+        <source>Open a isracoin: URI or payment request</source>
+        <translation>Abrir isracoin: link ou pedido de pagamento</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -572,19 +572,19 @@ Este produto inclui software desenvolvido pelo Projecto OpenSSL para uso no Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Dogecoin Core help message to get a list with possible Dogecoin Core command-line options</source>
+        <source>Show the Isracoin Core help message to get a list with possible Isracoin Core command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Dogecoin client</source>
-        <translation>Cliente Dogecoin</translation>
+        <source>Isracoin client</source>
+        <translation>Cliente Isracoin</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Dogecoin network</source>
-        <translation><numerusform>%n ligação ativa à rede Dogecoin</numerusform><numerusform>%n ligações ativas à rede Dogecoin</numerusform></translation>
+        <source>%n active connection(s) to Isracoin network</source>
+        <translation><numerusform>%n ligação ativa à rede Isracoin</numerusform><numerusform>%n ligações ativas à rede Isracoin</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -691,8 +691,8 @@ Endereço: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+438"/>
-        <source>A fatal error occurred. Dogecoin Core can no longer continue safely and will quit.</source>
-        <translation>Ocorreu um erro fatal. O Dogecoin não pode continuar com segurança e irá fechar.</translation>
+        <source>A fatal error occurred. Isracoin Core can no longer continue safely and will quit.</source>
+        <translation>Ocorreu um erro fatal. O Isracoin não pode continuar com segurança e irá fechar.</translation>
     </message>
 </context>
 <context>
@@ -1049,8 +1049,8 @@ Endereço: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Dogecoin address.</source>
-        <translation>O endereço introduzido &quot;%1&quot; não é um endereço dogecoin válido.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Isracoin address.</source>
+        <translation>O endereço introduzido &quot;%1&quot; não é um endereço isracoin válido.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1095,13 +1095,13 @@ Endereço: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Dogecoin Core - Command-line options</source>
+        <source>Isracoin Core - Command-line options</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+38"/>
-        <source>Dogecoin Core</source>
-        <translation>Núcleo Dogecoin</translation>
+        <source>Isracoin Core</source>
+        <translation>Núcleo Isracoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1153,18 +1153,18 @@ Endereço: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Dogecoin Core.</source>
-        <translation>Bem-vindo ao Dogecoin Core.</translation>
+        <source>Welcome to Isracoin Core.</source>
+        <translation>Bem-vindo ao Isracoin Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Dogecoin Core will store its data.</source>
-        <translation>Sendo isto a primeira vez que o programa é iniciado, você pode escolher onde Dogecoin Core vai guardar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where Isracoin Core will store its data.</source>
+        <translation>Sendo isto a primeira vez que o programa é iniciado, você pode escolher onde Isracoin Core vai guardar os seus dados.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Dogecoin Core will download and store a copy of the Dogecoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Dogecoin Core vai transferir e guardar uma cópia do Dogecoin &quot;block chain&quot; (cadeia de bloco). Pelo menos %1GB de dados será guardado neste directório, e vai crescer consoante o tempo.
+        <source>Isracoin Core will download and store a copy of the Isracoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Isracoin Core vai transferir e guardar uma cópia do Isracoin &quot;block chain&quot; (cadeia de bloco). Pelo menos %1GB de dados será guardado neste directório, e vai crescer consoante o tempo.
 A sua &quot;carteira&quot; também irá ser guardada neste directório.</translation>
     </message>
     <message>
@@ -1179,8 +1179,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../intro.cpp" line="+85"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Isracoin</source>
+        <translation>Isracoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1255,13 +1255,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Dogecoin Core after logging in to the system.</source>
-        <translation>Começar o Dogecoin automaticamente ao iniciar sessão no sistema.</translation>
+        <source>Automatically start Isracoin Core after logging in to the system.</source>
+        <translation>Começar o Isracoin automaticamente ao iniciar sessão no sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Dogecoin Core on system login</source>
-        <translation>&amp;Começar o Dogecoin ao iniciar o sistema</translation>
+        <source>&amp;Start Isracoin Core on system login</source>
+        <translation>&amp;Começar o Isracoin ao iniciar o sistema</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1290,7 +1290,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+58"/>
-        <source>Connect to the Dogecoin network through a SOCKS proxy.</source>
+        <source>Connect to the Isracoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1325,8 +1325,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Dogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir a porta do cliente dogecoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
+        <source>Automatically open the Isracoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir a porta do cliente isracoin automaticamente no seu router. Isto penas funciona se o seu router suportar UPnP e este se encontrar ligado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1395,8 +1395,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Dogecoin Core.</source>
-        <translation>A linguagem da interface do utilizador pode ser definida aqui. Esta definição entrará em efeito após reiniciar o Dogecoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Isracoin Core.</source>
+        <translation>A linguagem da interface do utilizador pode ser definida aqui. Esta definição entrará em efeito após reiniciar o Isracoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1410,8 +1410,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Dogecoin addresses in the transaction list or not.</source>
-        <translation>Se mostrar, ou não, os endereços Dogecoin na lista de transações.</translation>
+        <source>Whether to show Isracoin addresses in the transaction list or not.</source>
+        <translation>Se mostrar, ou não, os endereços Isracoin na lista de transações.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1485,8 +1485,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Dogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Dogecoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Isracoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada poderá estar desatualizada. A sua carteira sincroniza automaticamente com a rede Isracoin depois de estabelecer ligação, mas este processo ainda não está completo.</translation>
     </message>
     <message>
         <location line="-155"/>
@@ -1555,8 +1555,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Dogecoin address or malformed URI parameters.</source>
-        <translation>URI não foi lido correctamente! Isto pode ser causado por um endereço Dogecoin inválido ou por parâmetros URI malformados.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Isracoin address or malformed URI parameters.</source>
+        <translation>URI não foi lido correctamente! Isto pode ser causado por um endereço Isracoin inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1575,8 +1575,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start dogecoin: click-to-pay handler</source>
-        <translation>Impossível começar o modo clicar-para-pagar com dogecoin:</translation>
+        <source>Cannot start isracoin: click-to-pay handler</source>
+        <translation>Impossível começar o modo clicar-para-pagar com isracoin:</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1644,8 +1644,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location filename="../bitcoin.cpp" line="+71"/>
         <location line="+11"/>
-        <source>Dogecoin</source>
-        <translation>Dogecoin</translation>
+        <source>Isracoin</source>
+        <translation>Isracoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1815,7 +1815,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Dogecoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Isracoin Core debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir o ficheiro de registo de depuração da pasta de dados actual. Isto pode demorar alguns segundos para ficheiros de registo maiores.</translation>
     </message>
     <message>
@@ -1825,8 +1825,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Dogecoin Core RPC console.</source>
-        <translation>Bem-vindo à consola RPC Dogecoin.</translation>
+        <source>Welcome to the Isracoin Core RPC console.</source>
+        <translation>Bem-vindo à consola RPC Isracoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1908,7 +1908,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+7"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Dogecoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Isracoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2192,8 +2192,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="-136"/>
-        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Dogecoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Isracoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -2282,8 +2282,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+112"/>
-        <source>Warning: Invalid Dogecoin address</source>
-        <translation>Aviso: Endereço Dogecoin inválido</translation>
+        <source>Warning: Invalid Isracoin address</source>
+        <translation>Aviso: Endereço Isracoin inválido</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -2384,7 +2384,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+10"/>
-        <source>A message that was attached to the Dogecoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Dogecoin network.</source>
+        <source>A message that was attached to the Isracoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Isracoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2416,15 +2416,15 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Dogecoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Isracoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
 </context>
 <context>
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Dogecoin Core is shutting down...</source>
+        <source>Isracoin Core is shutting down...</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2494,8 +2494,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Dogecoin address</source>
-        <translation>Assine uma mensagem para provar que é dono deste endereço Dogecoin</translation>
+        <source>Sign the message to prove you own this Isracoin address</source>
+        <translation>Assine uma mensagem para provar que é dono deste endereço Isracoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2530,8 +2530,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Dogecoin address</source>
-        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Dogecoin especificado</translation>
+        <source>Verify the message to ensure it was signed with the specified Isracoin address</source>
+        <translation>Verifique a mensagem para assegurar que foi assinada com o endereço Isracoin especificado</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2546,8 +2546,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+29"/>
         <location line="+3"/>
-        <source>Enter a Dogecoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
-        <translation>Introduza um endereço Dogecoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
+        <source>Enter a Isracoin address (e.g. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</source>
+        <translation>Introduza um endereço Isracoin (p.ex. DJ7zB7c5BsB9UJLy1rKQtY7c6CQfGiaRLM)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2556,8 +2556,8 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Dogecoin signature</source>
-        <translation>Introduza assinatura Dogecoin</translation>
+        <source>Enter Isracoin signature</source>
+        <translation>Introduza assinatura Isracoin</translation>
     </message>
     <message>
         <location line="+84"/>
@@ -2630,13 +2630,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Dogecoin Core</source>
-        <translation>Núcleo Dogecoin</translation>
+        <source>Isracoin Core</source>
+        <translation>Núcleo Isracoin</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Dogecoin Core developers</source>
-        <translation>Os programadores Dogecoin</translation>
+        <source>The Isracoin Core developers</source>
+        <translation>Os programadores Isracoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3203,7 +3203,7 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
 </context>
 <context>
-    <name>dogecoin-core</name>
+    <name>isracoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
@@ -3226,13 +3226,13 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: dogecoin.conf)</source>
-        <translation>Especificar ficheiro de configuração (por defeito: dogecoin.conf)</translation>
+        <source>Specify configuration file (default: isracoin.conf)</source>
+        <translation>Especificar ficheiro de configuração (por defeito: isracoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: dogecoind.pid)</source>
-        <translation>Especificar ficheiro pid (por defeito: dogecoind.pid)</translation>
+        <source>Specify pid file (default: isracoind.pid)</source>
+        <translation>Especificar ficheiro pid (por defeito: isracoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3309,24 +3309,24 @@ A sua &quot;carteira&quot; também irá ser guardada neste directório.</transla
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=dogecoinrpc
+rpcuser=isracoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Dogecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Isracoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, deverá definir rpcpassword no ficheiro de configuração :
  %s
 É recomendado que use a seguinte palavra-passe aleatória:
-rpcuser=dogecoinrpc
+rpcuser=isracoinrpc
 rpcpassword=%s
 (não precisa recordar esta palavra-passe)
 O nome de utilizador e password NÃO DEVEM ser iguais.
 Se o ficheiro não existir, crie-o com permissões de leitura apenas para o dono.
 Também é recomendado definir alertnotify para que seja alertado sobre problemas;
-por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@foo.com
+por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Isracoin&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3346,8 +3346,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Dogecoin Core is probably already running.</source>
-        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o Dogecoin já está a ser executado.</translation>
+        <source>Cannot obtain a lock on data directory %s. Isracoin Core is probably already running.</source>
+        <translation>Impossível trancar a pasta de dados %s.  Provavelmente o Isracoin já está a ser executado.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3391,13 +3391,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Dogecoin Core will not work properly.</source>
-        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas! Se o seu relógio não estiver certo o Dogecoin não irá funcionar correctamente.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Isracoin Core will not work properly.</source>
+        <translation>Atenção: Por favor verifique que a data e hora do seu computador estão correctas! Se o seu relógio não estiver certo o Isracoin não irá funcionar correctamente.</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
-        <translation>Aviso: A rede não parece estar completamente funcional! Parece que alguns dogecoiner&apos;s estão com dificuldades técnicas.</translation>
+        <translation>Aviso: A rede não parece estar completamente funcional! Parece que alguns isracoiner&apos;s estão com dificuldades técnicas.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3426,13 +3426,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Dogecoin Core Daemon</source>
-        <translation>Dogecoin Core Daemon</translation>
+        <source>Isracoin Core Daemon</source>
+        <translation>Isracoin Core Daemon</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Dogecoin Core RPC client version</source>
-        <translation>Versão do cliente Dogecoin RPC</translation>
+        <source>Isracoin Core RPC client version</source>
+        <translation>Versão do cliente Isracoin RPC</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3631,8 +3631,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Dogecoin Core server</source>
-        <translation>Enviar comando para servidor Dogecoin</translation>
+        <source>Send command to Isracoin Core server</source>
+        <translation>Enviar comando para servidor Isracoin</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3651,8 +3651,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+2"/>
-        <source>Start Dogecoin Core server</source>
-        <translation>Começar servidor Dogecoin</translation>
+        <source>Start Isracoin Core server</source>
+        <translation>Começar servidor Isracoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3661,8 +3661,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use dogecoin-cli):</source>
-        <translation>Utilização (deprecado, use dogecoin-cli)</translation>
+        <source>Usage (deprecated, use isracoin-cli):</source>
+        <translation>Utilização (deprecado, use isracoin-cli)</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3926,13 +3926,13 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Dogecoin Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do Dogecoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Isracoin Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma versão mais recente do Isracoin</translation>
     </message>
     <message>
         <location line="+98"/>
-        <source>Wallet needed to be rewritten: restart Dogecoin Core to complete</source>
-        <translation>A Carteira precisou ser reescrita: reinicie o Dogecoin para completar</translation>
+        <source>Wallet needed to be rewritten: restart Isracoin Core to complete</source>
+        <translation>A Carteira precisou ser reescrita: reinicie o Isracoin para completar</translation>
     </message>
     <message>
         <location line="-100"/>
@@ -3991,8 +3991,8 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Alerta Dogecoin&quot; admin@fo
     </message>
     <message>
         <location line="-32"/>
-        <source>Unable to bind to %s on this computer. Dogecoin Core is probably already running.</source>
-        <translation>Incapaz de vincular à porta %s neste computador.  Provavelmente o Dogecoin já está a funcionar.</translation>
+        <source>Unable to bind to %s on this computer. Isracoin Core is probably already running.</source>
+        <translation>Incapaz de vincular à porta %s neste computador.  Provavelmente o Isracoin já está a funcionar.</translation>
     </message>
     <message>
         <location line="+95"/>

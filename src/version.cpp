@@ -8,9 +8,9 @@
 #include <string>
 
 // Name of client reported in the 'version' message. Report the same name
-// for both dogecoind and dogecoin-qt, to make it harder for attackers to
+// for both isracoind and isracoin-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("Shibetoshi");
+const std::string CLIENT_NAME("IsraCoin");
 
 // Client version number
 #define CLIENT_VERSION_SUFFIX   ""

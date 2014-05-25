@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Dogecoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@, Copyright © 2013-@COPYRIGHT_YEAR@ Isracoin Core developers, 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Dogecoin-Qt</string>
+  <string>Isracoin-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>com.dogecoin.wallet-qt</string>
+  <string>com.isracoin.wallet-qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,10 +40,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>com.dogecoin.DogecoinPayment</string>
+      <string>com.isracoin.IsracoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>dogecoin</string>
+        <string>isracoin</string>
       </array>
     </dict>
   </array>
@@ -52,9 +52,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>com.dogecoin.paymentrequest</string>
+      <string>com.isracoin.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Dogecoin payment request</string>
+      <string>Isracoin payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -62,10 +62,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-dogecoin-payment-request</string>
+        <string>application/x-isracoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>dogecoinpaymentrequest</string>
+          <string>isracoinpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>com.dogecoin.paymentrequest</string>
+        <string>com.isracoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

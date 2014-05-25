@@ -15,11 +15,11 @@ endif
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += dogecoind
+  bin_PROGRAMS += isracoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += dogecoin-cli
+  bin_PROGRAMS += isracoin-cli
 endif
 
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
@@ -150,36 +150,36 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# dogecoind binary #
-dogecoind_LDADD = \
+# isracoind binary #
+isracoind_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-dogecoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
+isracoind_LDADD += libbitcoin_wallet.a libbitcoin_server_wallet.a
 endif
-dogecoind_SOURCES = dogecoind.cpp
+isracoind_SOURCES = isracoind.cpp
 #
 
 if TARGET_WINDOWS
-dogecoind_SOURCES += dogecoind-res.rc
+isracoind_SOURCES += isracoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-dogecoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+isracoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# dogecoin-cli binary #
-dogecoin_cli_LDADD = \
+# isracoin-cli binary #
+isracoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(BOOST_LIBS)
-dogecoin_cli_SOURCES = dogecoin-cli.cpp
+isracoin_cli_SOURCES = isracoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-dogecoin_cli_SOURCES += dogecoin-cli-res.rc
+isracoin_cli_SOURCES += isracoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race
